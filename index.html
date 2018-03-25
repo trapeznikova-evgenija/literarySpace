@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css"
+        href="bower_components/bootstrap-select-1.13.0-beta/dist/css/bootstrap-select.min.css">
   <link rel="stylesheet" type="text/css" href="assets/template/style/scss/main.css">
 </head>
 <body>
@@ -84,20 +86,43 @@
       <div class="row">
         <div class="search-field col-12 col-xl-6">
           <div class="search-field-title">Найдите писателей</div>
-          <div>В процессе написания одного веб-приложения возникла необходимость тестировать код на PHP, интенсивно
-            взаимодействующий с БД MySQL. В проекте в качестве фреймворка модульного тестирования использовался порт
-            xUnit — PHPUnit. В результате было принято решение писать тесты для модулей, непосредственно
-            взаимодействующих с базой, подцепив плагин PHPUnit/DbUnit. Дальше я расскажу о тех трудностях, которые
-            возникли при написании тестов и о том, каким способом я их преодолел. В ответ же хотелось бы получить
-            комментарии знающих людей относительно корректности моих решений.
+          <div class="genre-input">
+            <div>По жанру</div>
+            <select class="selectpicker dropdown-genre padding-select" data-width="100%" multiple title="Выберите один или несколько жанров">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </select>
+            <small>Например: Психология, Драма</small>
           </div>
+          <div class="row">
+            <div class="col-4">
+              <div>По веку</div>
+              <select class="selectpicker dropdown-century padding-select" data-width="100%" title="Выберите век">
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+              </select>
+            </div>
+            <div class="col-8">
+              <div>По стране</div>
+              <select class="selectpicker dropdown-country padding-select" data-width="100%" title="Выберите страну писателя">
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+              </select>
+            </div>
+          </div>
+          <button class="button button-search" type="submit">Найти</button>
         </div>
       </div>
     </div>
   </div>
 </main>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/popper.js/dist/popper.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap-select-1.13.0-beta/dist/js/bootstrap-select.min.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
 <script src="assets/template/js/main.js"></script>
 </body>

@@ -57,15 +57,53 @@ body
   padding-top: 60px;
   padding-bottom: 60px;
 
+  .genre-input
+  {
+    padding: 20px 0 25px;
+  }
+
   .search-field
   {
+    font-family: $mainFont;
     background-color: white;
-    padding: 30px;
+    padding: 40px 30px 40px;
   }
 
   .search-field-title
   {
     font-size: 30px;
-    font-family: $mainFont;
   }
+
+  .dropdown-century
+  {
+    max-width: 114%;
+    min-width: 111%;
+  }
+
+}
+
+.padding-select
+{
+  padding: 10px 0 10px;
+}
+
+.button-search
+{
+  color: white;
+  padding: 10px 64px 10px;
+  font-size: 25px;
+  border-radius: 4px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 26px;
+  background-color: #990000;
+}
+
+.button
+{
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
 }

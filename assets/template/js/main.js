@@ -6,4 +6,6 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000
     });
+
+    $('.selectpicker').selectpicker();
 });
