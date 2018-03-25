@@ -1,0 +1,71 @@
+@import "variables";
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+.header-top
+{
+  font-family: $mainFont;
+  padding: 30px 0 30px;
+
+  .project-name
+  {
+    font-size: 30px;
+  }
+
+  .project-subtitle
+  {
+
+  }
+}
+
+.header-main
+{
+  background: url("../../image/header_background.jpg") center center;
+  background-size: cover;
+  color: white;
+  font-family: $mainFont;
+
+  .header-main-text
+  {
+    max-width: 542px;
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+.description-block
+{
+  padding: 71px 0 286px;
+  text-align: center;
+}
+
+.slider-wrapper
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.search-field-wrapper
+{
+  background: url("../../image/main_background.jpg");
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .search-field
+  {
+    background-color: white;
+    padding: 30px;
+  }
+
+  .search-field-title
+  {
+    font-size: 30px;
+    font-family: $mainFont;
+  }
+}
