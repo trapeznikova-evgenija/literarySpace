@@ -1,0 +1,10 @@
+{% extends"layout.twig" %}
+
+{% block content %}
+  <p>
+    Hello, {{ name }}!
+  </p>
+  {% for book in books %}
+    <p>{{ book }}</p>
+  {% endfor %}
+{% endblock %}
