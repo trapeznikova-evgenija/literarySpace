@@ -6,10 +6,16 @@ body
   padding: 0;
 }
 
+.common
+{
+  font-family: $mainFont;
+}
+
 .header-top
 {
   font-family: $mainFont;
-  padding: 30px 0 30px;
+  padding: 20px 0 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
   .project-name
   {
@@ -169,4 +175,125 @@ body
     display: inline-block;
     padding: 20px 10px 20px;
   }
+}
+
+.search-result
+{
+  font-family: $mainFont;
+  padding-bottom: 50px;
+
+  .main-title
+  {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .bread-crumbs
+  {
+    padding-top: 30px;
+  }
+
+  .button-show-more
+  {
+    margin-top: 0;
+  }
+}
+
+.search-options
+{
+  font-size: 19px;
+}
+
+.search-card-container
+{
+  padding: 30px 0 30px;
+
+  .search-card
+  {
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 20px 5px 20px;
+
+    .author-card-name
+    {
+      padding: 10px 0 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .years-of-life
+    {
+      padding: 0 0 10px;
+    }
+
+    .author-card-description
+    {
+      padding-bottom: 10px;
+    }
+
+    &:hover
+    {
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+.author-container
+{
+  .main-img-author
+  {
+    max-width: 500px;
+  }
+
+  .author-description
+  {
+    padding: 0 40px;
+
+    .quote
+    {
+      font-size: 19px;
+      padding: 30px 0 20px;
+    }
+
+    .author-name
+    {
+      font-size: 30px;
+    }
+  }
+
+}
+
+.author-main-container
+{
+  .bread-crumbs
+  {
+    padding: 30px 0 30px;
+    display: block;
+  }
+}
+
+.main-info
+{
+  .main-info-title
+  {
+    padding: 10px 0 10px;
+  }
+
+  .main-info-text
+  {
+    padding: 10px 60px 10px 0;
+    font-size: 18px;
+  }
+
+  .introduction
+  {
+    font-size: 18px;
+    padding: 40px 170px 20px 0;
+  }
+}
+
+.signature
+{
+  text-align: right;
+  padding-bottom: 10px;
 }

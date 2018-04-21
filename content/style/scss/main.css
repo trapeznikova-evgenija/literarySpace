@@ -2,9 +2,13 @@ body {
   margin: 0;
   padding: 0; }
 
+.common {
+  font-family: "Comfortaa"; }
+
 .header-top {
   font-family: "Comfortaa";
-  padding: 30px 0 30px; }
+  padding: 20px 0 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .header-top .project-name {
     font-size: 30px; }
 
@@ -103,5 +107,63 @@ body {
     cursor: pointer;
     display: inline-block;
     padding: 20px 10px 20px; }
+
+.search-result {
+  font-family: "Comfortaa";
+  padding-bottom: 50px; }
+  .search-result .main-title {
+    text-align: left;
+    padding-bottom: 0; }
+  .search-result .bread-crumbs {
+    padding-top: 30px; }
+  .search-result .button-show-more {
+    margin-top: 0; }
+
+.search-options {
+  font-size: 19px; }
+
+.search-card-container {
+  padding: 30px 0 30px; }
+  .search-card-container .search-card {
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 20px 5px 20px; }
+    .search-card-container .search-card .author-card-name {
+      padding: 10px 0 10px;
+      font-size: 20px;
+      font-weight: bold; }
+    .search-card-container .search-card .years-of-life {
+      padding: 0 0 10px; }
+    .search-card-container .search-card .author-card-description {
+      padding-bottom: 10px; }
+    .search-card-container .search-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.author-container .main-img-author {
+  max-width: 500px; }
+.author-container .author-description {
+  padding: 0 40px; }
+  .author-container .author-description .quote {
+    font-size: 19px;
+    padding: 30px 0 20px; }
+  .author-container .author-description .author-name {
+    font-size: 30px; }
+
+.author-main-container .bread-crumbs {
+  padding: 30px 0 30px;
+  display: block; }
+
+.main-info .main-info-title {
+  padding: 10px 0 10px; }
+.main-info .main-info-text {
+  padding: 10px 60px 10px 0;
+  font-size: 18px; }
+.main-info .introduction {
+  font-size: 18px;
+  padding: 40px 170px 20px 0; }
+
+.signature {
+  text-align: right;
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=main.css.map */
