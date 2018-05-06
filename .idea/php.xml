@@ -7,6 +7,7 @@
       <path value="." />
       <path value="/usr/share/php" />
       <path value="$PROJECT_DIR$/include" />
+      <path value="$PROJECT_DIR$" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

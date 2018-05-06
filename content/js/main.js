@@ -9,4 +9,9 @@ $(function () {
     });
 
     $('.selectpicker').selectpicker();
+
+    $('.gallery').lightGallery
+    ({
+        selector: 'a'
+    });
 });

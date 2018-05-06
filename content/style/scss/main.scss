@@ -274,6 +274,8 @@ body
 
 .main-info
 {
+  padding-bottom: 60px;
+
   .main-info-title
   {
     padding: 10px 0 10px;
@@ -296,4 +298,20 @@ body
 {
   text-align: right;
   padding-bottom: 10px;
+}
+
+.gallery-item
+{
+  margin-top: 20px;
+}
+
+.main-image
+{
+  border-radius: 26px;
+}
+
+.photo-gallery-writer
+{
+  margin-bottom: 25px;
+  margin-top: 20px;
 }

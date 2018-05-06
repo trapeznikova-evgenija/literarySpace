@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Литературное пространство</title>
+    {#<link rel="stylesheet" type="text/css" href="/literarySpace/bower_components/slick-carousel/slick/slick.css">#}
+    {#<link rel="stylesheet" type="text/css" href="/literarySpace/bower_components/slick-carousel/slick/slick-theme.css">#}
+    {#<link rel="stylesheet" type="text/css" href="bower_components/lightgallery/dist/css/lightgallery.min.css">#}
+    {#<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">#}
+    {#<link rel="stylesheet" type="text/css" href="/literarySpace/bower_components/bootstrap/dist/css/bootstrap.min.css">#}
+    {#<link rel="stylesheet" type="text/css"#}
+          {#href="/literarySpace/bower_components/bootstrap-select-1.13.0-beta/dist/css/bootstrap-select.min.css">#}
+    {#<link rel="stylesheet" type="text/css" href="/literarySpace/content/style/scss/main.css">#}
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="project-name">Литературное пространство</div>
+          <div class="project-subtitle">Путеводитель по биографическому миру поэтов и писателей</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container common author-main-container">
+        <a class="bread-crumbs">Вернуться на главную</a>
+        <div class="author-container">
+          <div class="row">
+            <div class="main-img-author col-lg-6">
+              <img class="main-img img-fluid" src="content/image/main_picture/{% for item in data %}{{ item.id_writer }}{% endfor %}.jpg">
+            </div>
+            <div class="author-description col-lg-6">
+              <h1 class="author-name">Эрне́ст Ми́ллер Хемингуэ́й</h1>
+              <div class="quote">
+                {% for item in data %}
+                  {{ item.quote }}
+                {% endfor %}
+              </div>
+              <div class="signature">
+                <img class="img-fluid" src="content/image/signature/hemingway_signature.svg" alt="Подпись Хемингуэя">
+              </div>
+            </div>
+          </div>
+          <div class="main-info">
+            <div class="introduction">
+              {% for item in data %}
+                {{ item.intoduction_content }}
+              {% endfor %}
+            </div>
+            {% include 'blocks/writer_gallery.twig' %}
+            {% autoescape false %}
+              {% for content in data %}
+                {{ content.content }}
+              {% endfor %}
+            {% endautoescape %}
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+    <script src="bower_components/lightgallery/modules/lg-thumbnail.min.js"></script>
+    <script src="bower_components/popper.js/dist/umd/popper.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-select-1.13.0-beta/dist/js/bootstrap-select.min.js"></script>
+    <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="content/js/main.js"></script>
+  </body>
+</html>
