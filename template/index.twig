@@ -1,0 +1,150 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+  <div class="header-main container-fluid">
+    <div class="container description-block">
+      <div class="header-main-text">
+        Проект, посвященный творцам литературного мира. Мы поможем найти писателей по отобранным критериям.
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container slider-wrapper">
+      <div class="autoplay">
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/pushkin.jpg" title="А.С.Пушкин">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/grin.jpg" title="Грин">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/checkov.jpg" title="А.П.Чехов">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/tolstoy.jpg" title="Л.Н.Толстой">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/london.jpg" title="Лондон">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/tven.jpg" title="Твен">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/tsvetaeva.jpg" title="Цветаева">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/bulgakov.jpg" title="Булгаков">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/gogol.jpg" title="Гоголь">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/asadov.jpg" title="Асадов">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/remark.jpg" title="Ремарк">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/fizdzerald.jpg" title="Фицджеральд">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/dostoevskii.jpg" title="Достоевский">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/heminguei.jpg" title="Хемингуэй">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/uald.jpg" title="Уайльд">
+        </div>
+        <div class="slick-slide">
+          <img class="img-fluid" src="content/image/carousel_image/jelyazn.jpg" title="Желязны">
+        </div>
+      </div>
+    </div>
+    <div class="search-field-wrapper container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="search-field col-12 col-xl-6">
+            <div class="search-field-title">Найдите писателей</div>
+            <div class="genre-input">
+              <div>По жанру</div>
+              <select class="selectpicker dropdown-genre padding-select" data-width="100%" multiple
+                      title="Выберите один или несколько жанров">
+                <option>Mustard</option>
+                <option>Ketchup</option>
+                <option>Relish</option>
+              </select>
+              <small>Например: Психология, Драма</small>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div>По веку</div>
+                <select class="selectpicker dropdown-century padding-select" data-width="100%" title="Выберите век">
+                  <option>Mustard</option>
+                  <option>Ketchup</option>
+                  <option>Relish</option>
+                </select>
+              </div>
+              <div class="col-8">
+                <div>По стране</div>
+                <select class="selectpicker dropdown-country padding-select" data-width="100%"
+                        title="Выберите страну писателя">
+                  <option>Mustard</option>
+                  <option>Ketchup</option>
+                  <option>Relish</option>
+                </select>
+              </div>
+            </div>
+            <button class="button button-search" type="submit">Найти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container categories">
+      <h2 class="main-title">Категории</h2>
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <div class="category">
+            Лауреаты Нобелевской премии
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="category">
+            Лауреаты Нобелевской премии
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="category">
+            Лауреаты Нобелевской премии
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="category">
+            Лауреаты Нобелевской премии
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="category">
+            Лауреаты Нобелевской премии
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <div class="category">
+            Лауреаты Нобелевской премии
+          </div>
+        </div>
+      </div>
+      <button class="button button-show-more">Показать еще</button>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <ul class="footer-menu">
+        <li class="footer-menu-item"><a>Домой</a></li>
+        <li class="footer-menu-item"><a>Категории</a></li>
+        <li class="footer-menu-item"><a>Поиск</a></li>
+      </ul>
+    </div>
+  </footer>
+{% endblock content %}
+

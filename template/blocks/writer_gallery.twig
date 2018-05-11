@@ -1,42 +1,9 @@
 <div class="row gallery photo-gallery-writer">
-  <div class="col-3 gallery-item">
-    <a href="content/image/authors/Hemingway/1.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/1.jpg" title="Хеминуэй">
-    </a>
-  </div>
-  <div class="col-3 gallery-item">
-    <a href="content/image/authors/Hemingway/2.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/2.jpg" title="Хеминуэй">
-    </a>
-  </div>
-  <div class="col-3 gallery-item">
-    <a href="content/image/authors/Hemingway/3.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/3.jpg" title="Хеминуэй">
-    </a>
-  </div>
-  <div class="col-3 gallery-item">
-    <a href="content/image/authors/Hemingway/4.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/4.jpg" title="Хеминуэй">
-    </a>
-  </div>
-  <div class="col-3 gallery-item">
-    <a href="content/image/authors/Hemingway/5.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/5.jpg" title="Хеминуэй">
-    </a>
-  </div>
-  <div class="col-3 gallery-item">
-    <a href="content/image/authors/Hemingway/6.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/6.jpg" title="Хеминуэй">
-    </a>
-  </div>
-  <div class="col-3 gallery-item">
-    <a href="content/image/authors/Hemingway/7.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/7.jpg" title="Хеминуэй">
-    </a>
-  </div>
-  <div class="col-3 gallery-item">
-    <a href="literarySpace/content/image/authors/Hemingway/8.jpg">
-      <img class="img-fluid" src="content/image/authors/Hemingway/miniatures/8.jpg" title="Хеминуэй">
-    </a>
-  </div>
+  {% for item in writerPicture %}
+    <div class="col-3 gallery-item">
+      <a href="content/image/gallery/{{ item.filename }}">
+        <img class="img-fluid" src="content/image/gallery/miniatures/{{ item.filename }}" title="{{ item.surname }}">
+      </a>
+    </div>
+  {% endfor %}
 </div>

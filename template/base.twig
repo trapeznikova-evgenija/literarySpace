@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Литературное пространство</title>
-  {% block head %}{% endblock %}
+  {% include 'blocks/style.twig' %}
 </head>
 <body>
 <header>
@@ -14,11 +14,8 @@
       <div class="project-subtitle">Путеводитель по биографическому миру поэтов и писателей</div>
     </div>
   </div>
-  {% block headerMain %} {% endblock %}
 </header>
-<main>
-
-</main>
-{% block scripts %} {% endblock %}
+  {% block content %} {% endblock %}
+{% include 'blocks/scripts.twig' %}
 </body>
 </html>

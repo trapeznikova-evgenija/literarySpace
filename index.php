@@ -2,5 +2,5 @@
 
 require_once("include/common.inc.php");
 
-//echo getView('card.twig');
+echo getView('index.twig', array());
 

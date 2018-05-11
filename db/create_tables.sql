@@ -30,7 +30,6 @@ ALTER TABLE writer
 ALTER TABLE writer
     ADD COLUMN famous_book TEXT;
 
-
 CREATE TABLE IF NOT EXISTS genre_writer
 (
   id_genre_writer INT(11) AUTO_INCREMENT NOT NULL,
@@ -54,5 +53,23 @@ CREATE TABLE IF NOT EXISTS writer_picture
   id_writer INT(11),
   filename VARCHAR(255),
   PRIMARY KEY (id_writer_picture),
+  FOREIGN KEY (id_writer) REFERENCES writer(id_writer)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS writer_signature
+(
+  id_writer_signature INT(11) AUTO_INCREMENT NOT NULL,
+  id_writer INT(11),
+  filename VARCHAR(255),
+  PRIMARY KEY (id_writer_signature),
+  FOREIGN KEY (id_writer) REFERENCES writer(id_writer)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS main_writer_picture
+(
+  id_main_writer_picture INT(11) AUTO_INCREMENT NOT NULL,
+  id_writer INT(11),
+  filename VARCHAR(255),
+  PRIMARY KEY(id_main_writer_picture),
   FOREIGN KEY (id_writer) REFERENCES writer(id_writer)
 ) ENGINE=InnoDB;
