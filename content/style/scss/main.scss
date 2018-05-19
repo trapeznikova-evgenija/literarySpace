@@ -238,6 +238,11 @@ body
   }
 }
 
+.main-img
+{
+  max-height: 415px;
+}
+
 .author-container
 {
   .main-img-author
@@ -261,6 +266,11 @@ body
     }
   }
 
+}
+
+.img-size
+{
+  max-width: 215px;
 }
 
 .author-main-container

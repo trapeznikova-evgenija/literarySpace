@@ -14,4 +14,8 @@ $(function () {
     ({
         selector: 'a'
     });
+
+    $('.feedback-form').on('submit', function () {
+        console.log('Форма сабмитнулась');
+    })
 });

@@ -3,10 +3,13 @@
 {% block content %}
   <main>
     <div class="container common author-main-container">
+      {% for b in birth %}
+        {{ b.date_of }}
+        {% endfor %}
       <a class="bread-crumbs">Вернуться на главную</a>
       <div class="author-container">
         <div class="row">
-          <div class="main-img-author col-lg-6">
+          <div class="main-img-author text-center col-lg-6">
             <img class="main-img img-fluid"
                  src="content/image/main_picture/{% for item in mainWriterPicture %}{{ item.filename }}{% endfor %}">
           </div>
@@ -18,7 +21,7 @@
               {% endfor %}
             </div>
             <div class="signature">
-              <img class="img-fluid" src="content/image/signature/{% for signature in writerSignature %}{{ signature.filename }}{% endfor %}">
+              <img class="img-size" src="content/image/signature/{% for signature in writerSignature %}{{ signature.filename }}{% endfor %}">
             </div>
           </div>
         </div>

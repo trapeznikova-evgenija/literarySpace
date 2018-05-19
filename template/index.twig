@@ -64,39 +64,40 @@
     <div class="search-field-wrapper container-fluid">
       <div class="container">
         <div class="row">
-          <div class="search-field col-12 col-xl-6">
+          <form action="result_of_search.php" method="post" class="feedback-form search-field col-12 col-xl-6">
             <div class="search-field-title">Найдите писателей</div>
             <div class="genre-input">
               <div>По жанру</div>
-              <select class="selectpicker dropdown-genre padding-select" data-width="100%" multiple
+              <select name="authorGenre[]" class="selectpicker dropdown-genre padding-select" data-width="100%" multiple
                       title="Выберите один или несколько жанров">
-                <option>Mustard</option>
-                <option>Ketchup</option>
-                <option>Relish</option>
+                {% for genre in allGenre %}
+                  <option value="{{ genre.id_genre }}"> {{ genre.name_genre }} </option>
+                {% endfor %}
               </select>
               <small>Например: Психология, Драма</small>
             </div>
             <div class="row">
               <div class="col-4">
                 <div>По веку</div>
-                <select class="selectpicker dropdown-century padding-select" data-width="100%" title="Выберите век">
-                  <option>Mustard</option>
-                  <option>Ketchup</option>
-                  <option>Relish</option>
+                <select name="authorCentury" class="selectpicker dropdown-century padding-select" data-width="100%"
+                        title="Выберите век">
+                  {% for century in allCentury %}
+                    <option value="{{ century.name_century }}">{{ century.name_century }}</option>
+                  {% endfor %}
                 </select>
               </div>
               <div class="col-8">
                 <div>По стране</div>
-                <select class="selectpicker dropdown-country padding-select" data-width="100%"
+                <select name="authorCountry" class="selectpicker dropdown-country padding-select" data-width="100%"
                         title="Выберите страну писателя">
-                  <option>Mustard</option>
-                  <option>Ketchup</option>
-                  <option>Relish</option>
+                  {% for country in allCountry %}
+                    <option value="{{ country.name }}">{{ country.name }}</option>
+                  {% endfor %}
                 </select>
               </div>
             </div>
             <button class="button button-search" type="submit">Найти</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>

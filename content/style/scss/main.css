@@ -139,6 +139,9 @@ body {
     .search-card-container .search-card:hover {
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
+.main-img {
+  max-height: 415px; }
+
 .author-container .main-img-author {
   max-width: 500px; }
 .author-container .author-description {
@@ -148,6 +151,9 @@ body {
     padding: 30px 0 20px; }
   .author-container .author-description .author-name {
     font-size: 30px; }
+
+.img-size {
+  max-width: 215px; }
 
 .author-main-container .bread-crumbs {
   padding: 30px 0 30px;

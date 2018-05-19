@@ -11,6 +11,10 @@ if ($writerId && writerExist($writerId)) {
     $writerPicture = getWriterPictures($writerId);
     $writerSignature = getWriterSignature($writerId);
     $mainWriterPicture = getMainWriterPicture($writerId);
+//    $yearsOfLife = getYearsOfLife($writerId);
+    $allWriter = getAllWriter();
+    print_r($allWriter);
+
     echo getView('card.twig', array(
             'data' => $data,
             'writerPicture' => $writerPicture,
