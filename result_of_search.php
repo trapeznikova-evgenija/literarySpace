@@ -23,19 +23,37 @@ dbInitialConnect();
 //$allWriter = getFilterWriter($centuryId, $countryId, $authorGenresIdsArray);
 
 $currentFilter = '';
-getFilter('authorCentury', 'id_century', $currentFilter);
-getFilter('authorCountry', 'id_country', $currentFilter);
+getFilter('authorCentury', 'century.id_century', $currentFilter);
+//echo "empty " . $currentFilter . PHP_EOL;
+getFilter('authorCountry', 'country.id_country', $currentFilter);
+echo $currentFilter . PHP_EOL;
 $authorGenresIdsArray = getRequestParameter("authorGenre");
-if ($authorGenresIdsArray)
+echo '!!! ';
+print_r($authorGenresIdsArray);
+echo '!!!';
+$authorGenresIdsArray = array_values($authorGenresIdsArray);
+$idString = implode(',', $authorGenresIdsArray);
+echo $idString . 'IDSTRINT' . PHP_EOL;
+
+if ($idString)
 {
-    
+    if ($currentFilter)
+    {
+        $currentFilter = "{$currentFilter} AND genre_writer.id_genre IN ({$idString})";
+    } else
+    {
+        $currentFilter = "genre_writer.id_genre IN ({$idString})";
+    }
 }
+
+$allWriter =  getFilterWriter($currentFilter);
+print_r($allWriter);
 
 //print_r($authorGenres);
 //echo $centuryId . ' ' . $countryId;
 
 echo getView('result_of_search.twig', array(
-    'allWriter' => $allWriter,
+//    'allWriter' => $allWriter,
 //    'years' => $yearsOfLifeArray,
 //    'allPhoto' => $allWriterPhoto
 ));

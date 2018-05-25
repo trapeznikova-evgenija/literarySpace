@@ -8,10 +8,12 @@ VALUES ('Михаил', 'Афанасьевич', 'Булгаков', 'Росс�
         'Злых людей нет на свете, есть только люди несчастливые.');
 
 
-SELECT * FROM writer;
+SELECT *
+FROM writer;
 
 UPDATE writer
-SET intoduction_content = ('Известные произведения Булгакова: «Собачье сердце», «Записки юного врача», «Театральный роман», «Белая гвардия», «Роковые яйца», «Дьяволиада», «Иван Васильевич» и роман, принесший писателю мировую известность, — «Мастер и Маргарита», который был несколько раз экранизирован как в России, так и в других странах.')
+SET
+  intoduction_content = ('Известные произведения Булгакова: «Собачье сердце», «Записки юного врача», «Театральный роман», «Белая гвардия», «Роковые яйца», «Дьяволиада», «Иван Васильевич» и роман, принесший писателю мировую известность, — «Мастер и Маргарита», который был несколько раз экранизирован как в России, так и в других странах.')
 WHERE id_writer = 2;
 
 
@@ -42,13 +44,15 @@ SET content = ('<h2>Детство и юность</h2>
 <p>Михаил Афанасьевич вернулся к употреблению морфия для снятия болевых симптомов. С зимы 1940 года драматург перестал вставать с постели, а 10 марта великого писателя не стало. Похоронен Михаил Булгаков на Новодевичьем кладбище, а на его могиле по настоянию супруги положен камень, который ранее был установлен на могиле Николая Гоголя.</p>')
 WHERE id_writer = 2;
 
-INSERT writer_signature(id_writer, filename)
-    VALUES (2, 'Mikhail_Bulgakov_signature.svg');
+INSERT writer_signature (id_writer, filename)
+VALUES (2, 'Mikhail_Bulgakov_signature.svg');
 
-SELECT * FROM writer_signature;
+SELECT *
+FROM writer_signature;
 
 UPDATE writer
-SET intoduction_content = 'Широкое признание Хемингуэй получил благодаря как своим романам и многочисленным рассказам — с одной стороны, так и своей жизни, полной приключений и неожиданностей, — с другой. Его стиль, краткий и насыщенный, значительно повлиял на литературу XX века.'
+SET
+  intoduction_content = 'Широкое признание Хемингуэй получил благодаря как своим романам и многочисленным рассказам — с одной стороны, так и своей жизни, полной приключений и неожиданностей, — с другой. Его стиль, краткий и насыщенный, значительно повлиял на литературу XX века.'
 WHERE id_writer = 1;
 
 UPDATE writer
@@ -57,11 +61,11 @@ SET card_description = 'Американский писатель, журнал�
 UPDATE writer
 SET famous_book = '"Старик и море",  "Прощай, оружие!"';
 
-INSERT INTO genre_writer(id_writer, id_genre)
-    VALUES (1, 4),
-      (1, 6);
+INSERT INTO genre_writer (id_writer, id_genre)
+VALUES (1, 4),
+  (1, 6);
 
-INSERT INTO genre_writer(id_writer, id_genre)
+INSERT INTO genre_writer (id_writer, id_genre)
 VALUES (2, 3),
   (2, 4),
   (2, 16),
@@ -69,51 +73,63 @@ VALUES (2, 3),
   (2, 6),
   (2, 2);
 
-SELECT * FROM writer;
+SELECT *
+FROM writer;
 
 SELECT *
 FROM genre_writer;
 
-INSERT INTO genre(name_genre)
-    VALUES ('Мистика');
+INSERT INTO genre (name_genre)
+VALUES ('Мистика');
 
-SELECT * FROM writer
-INNER JOIN main_writer_picture ON writer.id_writer = main_writer_picture.id_writer;
+SELECT *
+FROM writer
+  INNER JOIN main_writer_picture ON writer.id_writer = main_writer_picture.id_writer;
 
-SELECT * FROM century;
-INSERT INTO century(name_century)
+SELECT *
+FROM century;
+INSERT INTO century (name_century)
 VALUES ('15'),
-('16'),
-('17'),
-('18'),
-('19'),
-('20'),
-('21');
+  ('16'),
+  ('17'),
+  ('18'),
+  ('19'),
+  ('20'),
+  ('21');
 
-INSERT INTO writer_picture(id_writer, filename)
-    VALUES (2, '03_Zh3u4fa.jpg'),
-            (2, '07_lnR8oTc.jpg'),
-            (2, '11_TQQ8h11.jpg'),
-            (2, '609221_900.png'),
-            (2, '1463065283-celeb_img_None.jpg'),
-            (2, 'original.jpg'),
-            (2, 'original (1).jpg'),
-            (2, 'tit-73-e1516213757220.jpg');
+INSERT INTO writer_picture (id_writer, filename)
+VALUES (2, '03_Zh3u4fa.jpg'),
+  (2, '07_lnR8oTc.jpg'),
+  (2, '11_TQQ8h11.jpg'),
+  (2, '609221_900.png'),
+  (2, '1463065283-celeb_img_None.jpg'),
+  (2, 'original.jpg'),
+  (2, 'original (1).jpg'),
+  (2, 'tit-73-e1516213757220.jpg');
 
-INSERT INTO main_writer_picture(id_writer, filename)
-    VALUES (2, 'bulgakov.jpg');
-
-
+INSERT INTO main_writer_picture (id_writer, filename)
+VALUES (2, 'bulgakov.jpg');
 
 # мистика 20 Россия
 
-SELECT DISTINCT writer.*, country.name as country_name
+SELECT DISTINCT
+  writer.*,
+  country.name AS country_name
 FROM writer
-INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
-INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
-INNER JOIN century ON writer.id_century = century.id_century
-INNER JOIN country ON writer.id_country = country.id_country
-WHERE (century.id_century = 6) AND country.id_country = 1 AND writer.id_writer IN (2, 3, 4, 5);
+  INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
+  INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
+  INNER JOIN century ON writer.id_century = century.id_century
+  INNER JOIN country ON writer.id_country = country.id_country
+WHERE (century.id_century = 6) AND country.id_country = 1 AND genre_writer.id_genre IN (2, 3, 4, 5, 16);
+
+SELECT * FROM genre;
+
+SELECT DISTINCT *
+FROM writer
+  INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
+  INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
+  INNER JOIN century ON writer.id_century = century.id_century
+  INNER JOIN country ON writer.id_country = country.id_country;
 
 SELECT *
 FROM writer;
@@ -127,8 +143,8 @@ FROM writer;
 SELECT *
 FROM century;
 
-SELECT DATE_FORMAT("2008-11-19",'%d.%m.%Y') as date_of;
-SELECT DATE_FORMAT("2008-11-19",'%m') as date_of;
+SELECT DATE_FORMAT("2008-11-19", '%d.%m.%Y') AS date_of;
+SELECT DATE_FORMAT("2008-11-19", '%m') AS date_of;
 
 UPDATE writer
 SET date_of_birth = '1891-05-15'
@@ -138,7 +154,7 @@ UPDATE writer
 SET date_of_death = '1961-07-02'
 WHERE writer.id_writer = 1;
 
-INSERT INTO writer(date_of_birth)
+INSERT INTO writer (date_of_birth)
 VALUES ('1961-07-02');
 
 # добавить внешний ключ к genre_writer
@@ -150,49 +166,62 @@ UPDATE writer
 SET id_century = 6
 WHERE id_writer = 2;
 
-SELECT * FROM writer;
+SELECT *
+FROM writer;
 
-SELECT writer.surname, writer_picture.filename
+SELECT
+  writer.surname,
+  writer_picture.filename
 FROM writer_picture
-LEFT JOIN writer ON writer_picture.id_writer = writer.id_writer;
+  LEFT JOIN writer ON writer_picture.id_writer = writer.id_writer;
 
 SELECT *
 FROM writer
-LEFT JOIN writer_signature ON writer.id_writer = writer_signature.id_writer;
+  LEFT JOIN writer_signature ON writer.id_writer = writer_signature.id_writer;
 
-INSERT INTO country(name)
-    VALUES ('Россия'),
-      ('США'),
-      ('Китай');
+INSERT INTO country (name)
+VALUES ('Россия'),
+  ('США'),
+  ('Китай');
 
-SELECT * FROM genre;
+SELECT *
+FROM genre;
 
-INSERT INTO genre(name_genre)
-    VALUES ('Роман-эпопея'),
-      ('Психология'),
-      ('Драма'),
-      ('Роман'),
-      ('Повесть'),
-      ('Рассказ'),
-      ('Комедия'),
-      ('Трагедия'),
-      ('Антиутопия'),
-      ('Пьеса');
+INSERT INTO genre (name_genre)
+VALUES ('Роман-эпопея'),
+  ('Психология'),
+  ('Драма'),
+  ('Роман'),
+  ('Повесть'),
+  ('Рассказ'),
+  ('Комедия'),
+  ('Трагедия'),
+  ('Антиутопия'),
+  ('Пьеса');
 
-SELECT name_genre FROM genre;
+SELECT name_genre
+FROM genre;
 
-SELECT genre.name_genre, country.name
+SELECT
+  genre.name_genre,
+  country.name
 FROM genre, country;
 
 
-SHOW VARIABLES ;
+SHOW VARIABLES;
 
 SHOW TABLES;
 
-SELECT * FROM genre_writer;
+SELECT *
+FROM genre_writer;
 
-SELECT * FROM writer;
+SELECT *
+FROM writer;
 
-SELECT date_of_birth, date_of_death FROM writer;
+SELECT
+  date_of_birth,
+  date_of_death
+FROM writer;
 
-SELECT name FROM country;
+SELECT name
+FROM country;
