@@ -82,7 +82,7 @@
                 <select name="authorCentury" class="selectpicker dropdown-century padding-select" data-width="100%"
                         title="Выберите век">
                   {% for century in allCentury %}
-                    <option value="{{ century.name_century }}">{{ century.name_century }}</option>
+                    <option value="{{ century.id_century }}">{{ century.name_century }}</option>
                   {% endfor %}
                 </select>
               </div>
@@ -91,7 +91,7 @@
                 <select name="authorCountry" class="selectpicker dropdown-country padding-select" data-width="100%"
                         title="Выберите страну писателя">
                   {% for country in allCountry %}
-                    <option value="{{ country.name }}">{{ country.name }}</option>
+                    <option value="{{ country.id_country }}">{{ country.name }}</option>
                   {% endfor %}
                 </select>
               </div>

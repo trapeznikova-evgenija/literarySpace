@@ -103,16 +103,29 @@ INSERT INTO writer_picture(id_writer, filename)
 INSERT INTO main_writer_picture(id_writer, filename)
     VALUES (2, 'bulgakov.jpg');
 
+
+
 # мистика 20 Россия
 
-SELECT *
+SELECT DISTINCT writer.*, country.name as country_name
 FROM writer
 INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
 INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
 INNER JOIN century ON writer.id_century = century.id_century
 INNER JOIN country ON writer.id_country = country.id_country
-WHERE (genre.name_genre = 'Мистика') AND (century.name_century = '20') AND country.name = 'Россия';
+WHERE (century.id_century = 6) AND country.id_country = 1 AND writer.id_writer IN (2, 3, 4, 5);
 
+SELECT *
+FROM writer;
+
+SELECT *
+FROM country;
+
+SELECT *
+FROM writer;
+
+SELECT *
+FROM century;
 
 SELECT DATE_FORMAT("2008-11-19",'%d.%m.%Y') as date_of;
 SELECT DATE_FORMAT("2008-11-19",'%m') as date_of;

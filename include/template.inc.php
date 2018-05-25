@@ -134,15 +134,25 @@ function getAllCentury()
     return dbQueryGetResult("SELECT * FROM century");
 }
 
-function getFilterWriter($idGenresString)
+function getFilterWriter($filterString)
 {
-    $request = dbQueryGetResult("SELECT *
-                                       FROM writer
-                                       INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
-                                       INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
-                                       INNER JOIN century ON writer.id_century = century.id_century
-                                       INNER JOIN country ON writer.id_country = country.id_country
-                                       WHERE genre.id_genre");
+
+}
+
+function getFilter($requestKey, $columnName, $currentFilter) : string
+{
+    $filter = getRequestParameter($requestKey);
+
+    if ($currentFilter)
+    {
+        $currentFilter = "{$currentFilter} AND {$columnName} = '{$filter}'";
+    } else
+    {
+        $currentFilter = "{$columnName} = '{$filter}'";
+    }
+
+    return $currentFilter;
+
 }
 
 //function getFilterWriter($filterString)

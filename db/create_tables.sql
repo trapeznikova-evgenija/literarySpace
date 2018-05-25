@@ -40,6 +40,9 @@ ALTER TABLE writer
     ADD FOREIGN KEY (id_country) REFERENCES country (id_country);
 
 ALTER TABLE writer
+    ADD FOREIGN KEY (id_century) REFERENCES century(id_century);
+
+ALTER TABLE writer
     ADD FOREIGN KEY (id_genre) REFERENCES genre (id_genre);
 
 SELECT *
