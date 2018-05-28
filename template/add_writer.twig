@@ -1,0 +1,96 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+  <div class="container">
+    <form class="needs-validation add_writer_form" enctype="multipart/form-data" novalidate>
+      {#<div class="form-group writer-name input-field-wrapper">#}
+        {#<div>Имя</div>#}
+        {#<input class="form-control" name="fullName" placeholder="Федор" type="text" required>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="form-group writer-name input-field-wrapper">#}
+        {#<div>Отчество</div>#}
+        {#<input class="form-control" name="fullName" placeholder="Михайлович" type="text" required>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="form-group writer-name input-field-wrapper">#}
+        {#<div>Фамилия</div>#}
+        {#<input class="form-control" name="fullName" placeholder="Достоевский" type="text" required>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="clear"></div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<div class="writer-filter-parameter">#}
+          {#<div>Страна</div>#}
+          {#<input class="form-control" placeholder="Россия" name="writerCountry" required>#}
+          {#<div class="invalid-feedback">Заполните это поле</div>#}
+        {#</div>#}
+        {#<div class="writer-filter-parameter">#}
+          {#<div>Век</div>#}
+          {#<input class="form-control" placeholder="20" name="writerCentury" required>#}
+          {#<div class="invalid-feedback">Заполните это поле</div>#}
+        {#</div>#}
+        {#<div class="writer-filter-parameter">#}
+          {#<div>Жанры писателя</div>#}
+          {#<input class="form-control" placeholder="Роман, Мистика" name="writerGenres" required>#}
+          {#<div class="invalid-feedback">Заполните это поле</div>#}
+        {#</div>#}
+      {#</div>#}
+      {#<div class="clear"></div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<div class="date-of-birth-input">#}
+          {#<div>Дата рождения</div>#}
+          {#<input class="form-control" name="dateOfBirth" type="text" placeholder="гггг-мм-дд" required>#}
+          {#<div class="invalid-feedback">Заполните это поле</div>#}
+        {#</div>#}
+        {#<div class="date-of-death-input">#}
+          {#<div>Дата смерти</div>#}
+          {#<input class="form-control" name="dateOfDeath" type="text" placeholder="гггг-мм-дд" required>#}
+          {#<div class="invalid-feedback">Заполните это поле</div>#}
+        {#</div>#}
+        {#<div class="clear"></div>#}
+      {#</div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<div>Описание для карточки писателя</div>#}
+        {#<textarea class="form-control" name="cardDescription" required></textarea>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<div>Известные книги писателя</div>#}
+        {#<textarea class="form-control" name="famousBook" required></textarea>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<div>Цитата</div>#}
+        {#<textarea type="text" class="form-control" name="quote" required></textarea>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<div>Описание писателя</div>#}
+        {#<textarea class="form-control" rows="2" name="introductionContent" required></textarea>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<div>Основная информация о писателе</div>#}
+        {#<textarea class="form-control" rows="3" name="content" required></textarea>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      <div class="form-group input-field-wrapper">
+        <label for="mainWriterPhoto">Выберите главное фото писателя</label>
+        <input name="mainWriterPhoto" type="file" class="form-control-file form-control" id="mainWriterPhoto" required>
+        <div class="invalid-feedback">Заполните это поле</div>
+      </div>
+      {#<div class="form-group input-field-wrapper">#}
+        {#<label for= "writerSignature">Выберите изображение подписи писателя</label>#}
+        {#<input name="writerSignature" type="file" class="form-control-file form-control" id="writerSignature" required>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      {#<div class="form-group input-field-wrapper">#}
+        {#<label for="writerGallery">Выберите несколько фотографий для галереи</label>#}
+        {#<input name="writerGallery" type="file" class="form-control form-control-file" id="writerGallery" multiple required>#}
+        {#<div class="invalid-feedback">Заполните это поле</div>#}
+      {#</div>#}
+      <button type="submit">Добавить писателя</button>
+    </form>
+  </div>
+{% endblock %}

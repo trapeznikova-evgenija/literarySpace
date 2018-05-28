@@ -134,57 +134,65 @@ function getAllCentury()
     return dbQueryGetResult("SELECT * FROM century");
 }
 
-function getFilterWriter($filterString)
+function getCountryName($idCountry) : string
 {
-    echo "SELECT DISTINCT writer.*, country.name as country_name
-                                   FROM writer
-                                   INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
-                                   INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
-                                   INNER JOIN century ON writer.id_century = century.id_century
-                                   INNER JOIN country ON writer.id_country = country.id_country
-                                   WHERE {$filterString}";
-
-    return dbQueryGetResult("SELECT DISTINCT writer.*, country.name as country_name
-                                   FROM writer
-                                   INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
-                                   INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
-                                   INNER JOIN century ON writer.id_century = century.id_century
-                                   INNER JOIN country ON writer.id_country = country.id_country 
-                                   WHERE {$filterString}"
-                           );
-}
-
-function getFilter($requestKey, $columnName, $currentFilter) : string
-{
-    global $currentFilter;
-    $filter = getRequestParameter($requestKey);
-//    echo $filter;
-
-    if($filter)
+    $resultArray =  dbQueryGetResult("SELECT DISTINCT country.name
+                            FROM country
+                            INNER JOIN writer ON country.id_country =  writer.id_country
+                            WHERE country.id_country = {$idCountry}");
+    if ($resultArray)
     {
-        if ($currentFilter)
-        {
-            $currentFilter = "{$currentFilter} AND {$columnName} = {$filter}";
-        } else
-        {
-            $currentFilter = "{$columnName} = {$filter}";
-        }
+        $countryName = getFirstElement($resultArray);
+        return $countryName;
     }
 
-//    echo $currentFilter;
-    return $currentFilter;
-
+    return '';
 }
 
-//function getFilterWriter($filterString)
-//{
-//    $request = dbQueryGetResult("SELECT *
-//                                       FROM writer
-//                                       INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
-//                                       INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
-//                                       INNER JOIN century ON writer.id_century = century.id_century
-//                                       INNER JOIN country ON writer.id_country = country.id_country
-//                                       WHERE {$filterString}");
-//}
+function getCenturyById($idCentury) : string
+{
+    $resultArray = dbQueryGetResult("SELECT DISTINCT century.name_century
+                                           FROM century
+                                           INNER JOIN writer ON century.id_century = writer.id_century
+                                           WHERE century.id_century = {$idCentury}");
 
-# (genre.id_genre IN {$authorGenres}) AND (century.name_century = '20') AND country.name = 'Россия'")
+    if ($resultArray)
+    {
+        $centuryName = getFirstElement($resultArray);
+        return $centuryName;
+    }
+
+    return '';
+}
+
+function getGenresName($authorGenresIdsArray)
+{
+    $genresString = '';
+
+    foreach ($authorGenresIdsArray as $idGenre)
+    {
+        $genreNameArray = dbQueryGetResult("SELECT name_genre
+                                                  FROM genre
+                                                  WHERE id_genre = {$idGenre}");
+        $genreName = getFirstElement($genreNameArray);
+        $genresString .= $genreName . ' ';
+    }
+
+    return $genresString;
+}
+
+function getStringOfUserFilter()
+{
+    $idCountry = getRequestParameter('authorCountry');
+    $idCentury = getRequestParameter('authorCentury');
+    $authorGenresIdsArray = getRequestParameter("authorGenre");
+    $authorGenresIdsArray = array_values($authorGenresIdsArray);
+
+    $countryName = getCountryName($idCountry);
+    $centuryName = getCenturyById($idCentury);
+    $genresName = getGenresName($authorGenresIdsArray);
+
+    $filterString = $genresName . $countryName . ' ' . $centuryName;
+
+    return $filterString;
+}

@@ -17,5 +17,13 @@ $(function () {
 
     $('.feedback-form').on('submit', function () {
         console.log('Форма сабмитнулась');
-    })
+    });
+
+    console.log($('.back-link'));
+
+    $('.back-link').on('click', function()
+    {
+        console.log('click happened');
+        history.back();
+    });
 });

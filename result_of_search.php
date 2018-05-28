@@ -3,14 +3,14 @@ require_once("include/common.inc.php");
 header('Content-Type: text/html; charset=UTF-8');
 dbInitialConnect();
 
-//$allWriter = getAllWriter();
-//$yearsOfLifeArray = array();
+$allWriter = getAllWriter();
+$yearsOfLifeArray = array();
 
-//foreach ($allWriter as $writer) {
-//    $id_writer = $writer['id_writer'];
-//    $yearsOfLifeArray[$id_writer] = getYearsOfLife($id_writer);
-//    insertYearsInWriterTable($id_writer, $yearsOfLifeArray);
-//}
+foreach ($allWriter as $writer) {
+    $id_writer = $writer['id_writer'];
+    $yearsOfLifeArray[$id_writer] = getYearsOfLife($id_writer);
+    insertYearsInWriterTable($id_writer, $yearsOfLifeArray);
+}
 
 //$allWriter[] = $yearsOfLifeArray;
 //$allWriter = getAllWriter();
@@ -24,16 +24,12 @@ dbInitialConnect();
 
 $currentFilter = '';
 getFilter('authorCentury', 'century.id_century', $currentFilter);
-//echo "empty " . $currentFilter . PHP_EOL;
 getFilter('authorCountry', 'country.id_country', $currentFilter);
-echo $currentFilter . PHP_EOL;
+
 $authorGenresIdsArray = getRequestParameter("authorGenre");
-echo '!!! ';
-print_r($authorGenresIdsArray);
-echo '!!!';
 $authorGenresIdsArray = array_values($authorGenresIdsArray);
 $idString = implode(',', $authorGenresIdsArray);
-echo $idString . 'IDSTRINT' . PHP_EOL;
+$stringOfUserFilter =  getStringOfUserFilter();
 
 if ($idString)
 {
@@ -47,13 +43,15 @@ if ($idString)
 }
 
 $allWriter =  getFilterWriter($currentFilter);
-print_r($allWriter);
+//echo $currentFilter;
+//print_r($allWriter);
 
 //print_r($authorGenres);
 //echo $centuryId . ' ' . $countryId;
 
 echo getView('result_of_search.twig', array(
-//    'allWriter' => $allWriter,
+    'allWriter' => $allWriter,
+    'filterString' => $stringOfUserFilter
 //    'years' => $yearsOfLifeArray,
 //    'allPhoto' => $allWriterPhoto
 ));

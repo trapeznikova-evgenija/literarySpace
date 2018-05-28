@@ -115,7 +115,11 @@ body {
     text-align: left;
     padding-bottom: 0; }
   .search-result .bread-crumbs {
-    padding-top: 30px; }
+    padding-top: 30px;
+    display: inline-block;
+    color: black; }
+    .search-result .bread-crumbs:hover {
+      text-decoration: none; }
   .search-result .button-show-more {
     margin-top: 0; }
 
@@ -127,7 +131,8 @@ body {
   .search-card-container .search-card {
     margin-bottom: 20px;
     cursor: pointer;
-    padding: 20px 5px 20px; }
+    padding: 20px 5px 20px;
+    color: black; }
     .search-card-container .search-card .author-card-name {
       padding: 10px 0 10px;
       font-size: 20px;
@@ -137,7 +142,8 @@ body {
     .search-card-container .search-card .author-card-description {
       padding-bottom: 10px; }
     .search-card-container .search-card:hover {
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-decoration: none; }
 
 .main-img {
   max-height: 415px; }
@@ -157,7 +163,10 @@ body {
 
 .author-main-container .bread-crumbs {
   padding: 30px 0 30px;
-  display: block; }
+  display: block;
+  color: black; }
+  .author-main-container .bread-crumbs:hover {
+    text-decoration: none; }
 
 .main-info {
   padding-bottom: 60px; }
@@ -183,5 +192,28 @@ body {
 .photo-gallery-writer {
   margin-bottom: 25px;
   margin-top: 20px; }
+
+.search-card-container a:hover {
+  text-decoration: none; }
+
+.date-of-birth-input {
+  float: left;
+  margin-right: 20px; }
+
+.date-of-death-input {
+  float: left; }
+
+.clear {
+  clear: both; }
+
+.writer-name {
+  float: left;
+  margin-right: 20px; }
+
+.writer-filter-parameter {
+  float: left;
+  margin-right: 20px; }
+  .writer-filter-parameter:last-child {
+    width: 54%; }
 
 /*# sourceMappingURL=main.css.map */

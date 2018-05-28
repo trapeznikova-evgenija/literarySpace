@@ -191,6 +191,13 @@ body
   .bread-crumbs
   {
     padding-top: 30px;
+    display: inline-block;
+    color: black;
+
+    &:hover
+    {
+      text-decoration: none;
+    }
   }
 
   .button-show-more
@@ -213,6 +220,7 @@ body
     margin-bottom: 20px;
     cursor: pointer;
     padding: 20px 5px 20px;
+    color: black;
 
     .author-card-name
     {
@@ -234,6 +242,7 @@ body
     &:hover
     {
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-decoration: none;
     }
   }
 }
@@ -279,6 +288,12 @@ body
   {
     padding: 30px 0 30px;
     display: block;
+    color: black;
+
+    &:hover
+    {
+      text-decoration: none;
+    }
   }
 }
 
@@ -324,4 +339,50 @@ body
 {
   margin-bottom: 25px;
   margin-top: 20px;
+}
+
+.search-card-container
+{
+  a:hover
+  {
+    text-decoration: none;
+  }
+}
+
+.date-of-birth-input
+{
+  float: left;
+  margin-right: 20px;
+}
+
+.date-of-death-input
+{
+  float: left;
+}
+
+.clear
+{
+  clear: both;
+}
+
+.writer-name
+{
+  float: left;
+  margin-right: 20px;
+}
+
+.writer-filter-parameter
+{
+  float: left;
+  margin-right: 20px;
+
+  &:last-child
+  {
+    width: 54%;
+  }
+}
+
+.input-field-wrapper
+{
+  
 }

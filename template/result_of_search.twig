@@ -3,25 +3,27 @@
 {% block content %}
   <main>
     <div class="container search-result">
-      <div class="bread-crumbs">Вернуться на главную</div>
+      <a href="index.php" class="bread-crumbs">Вернуться на главную</a>
       <h2 class="main-title">Найденные писатели</h2>
-      <div class="search-options">Психология США</div>
+      <div class="search-options">{{ filterString }}</div>
       <div class="row search-card-container">
         {% for writer in allWriter %}
           <div class="col-12 col-lg-4">
-            <div class="search-card">
-              <div>
-                <img class="img-fluid" src="content/image/main_picture/{{ writer.filename }}">
+            <a href="card.php?writerId={{ writer.id_writer }}">
+              <div class="search-card">
+                <div>
+                  <img class="img-fluid" src="content/image/main_picture/{{ writer.filename }}">
+                </div>
+                <div class="author-card-name">{{ writer.name }} {{ writer.surname }}</div>
+                <div class="years-of-life">{{ writer.years_of_life }}</div>
+                <div class="author-card-description">
+                  {{ writer.card_description }}
+                </div>
+                <div class="popular-book">
+                  {{ writer.famous_book }}
+                </div>
               </div>
-              <div class="author-card-name">{{ writer.name }} {{ writer.surname }}</div>
-              <div class="years-of-life">{{ writer.years_of_life  }}</div>
-              <div class="author-card-description">
-               {{ writer.card_description }}
-              </div>
-              <div class="popular-book">
-                {{ writer.famous_book }}
-              </div>
-            </div>
+            </a>
           </div>
         {% endfor %}
       </div>

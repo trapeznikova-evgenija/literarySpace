@@ -1,7 +1,7 @@
-INSERT INTO writer (name, surname, country, century, quote)
-VALUES ('Эрнест Миллер', 'Хемингуэй', 'США', 20,
-        'Если позволять себе шутить, люди не воспринимают тебя всерьез. И эти самые люди не понимают,
-         что есть многое, чего нельзя выдержать, если не шутить.');
+INSERT INTO writer (name, patronymic, surname, id_country, id_century, quote)
+VALUES ('Дейл', 'Бре́кенридж', 'Карнеги' , 2, 6,
+        'Каждый человек хотя бы пять минут в день бывает дураком. Настоящая мудрость состоит в том, чтобы не превышать этот временной лимит.');
+
 
 INSERT INTO writer (name, patronymic, surname, country, century, quote)
 VALUES ('Михаил', 'Афанасьевич', 'Булгаков', 'Россия', 20,
@@ -9,17 +9,19 @@ VALUES ('Михаил', 'Афанасьевич', 'Булгаков', 'Росс�
 
 
 SELECT *
-FROM writer;
+FROM century;
+
+SELECT * FROM writer;
 
 UPDATE writer
 SET
-  intoduction_content = ('Известные произведения Булгакова: «Собачье сердце», «Записки юного врача», «Театральный роман», «Белая гвардия», «Роковые яйца», «Дьяволиада», «Иван Васильевич» и роман, принесший писателю мировую известность, — «Мастер и Маргарита», который был несколько раз экранизирован как в России, так и в других странах.')
-WHERE id_writer = 2;
-
+  intoduction_content = ('Стоял у истоков создания теории общения, переведя научные разработки психологов того времени в практическую область, разработав собственную концепцию бесконфликтного общения.
+   Основал курсы по самосовершенствованию, навыкам эффективного общения, выступления и другие.')
+WHERE id_writer = 5;
 
 UPDATE writer
-SET famous_book = ('"Мастер и Маргарита", "Собачье сердце", "Белая гвардия"')
-WHERE id_writer = 2;
+SET famous_book = ('"Как перестать беспокоиться и начать жить", "Как завоёвывать друзей и оказывать влияние на людей"')
+WHERE id_writer = 5;
 
 
 UPDATE writer
@@ -56,7 +58,10 @@ SET
 WHERE id_writer = 1;
 
 UPDATE writer
-SET card_description = 'Американский писатель, журналист, лауреат Нобелевской премии по литературе 1954 года';
+SET card_description = 'Американский педагог, лектор, писатель, оратор-мотиватор.'
+WHERE writer.id_writer = 5;
+
+SELECT * FROM writer;
 
 UPDATE writer
 SET famous_book = '"Старик и море",  "Прощай, оружие!"';
@@ -108,21 +113,29 @@ VALUES (2, '03_Zh3u4fa.jpg'),
   (2, 'tit-73-e1516213757220.jpg');
 
 INSERT INTO main_writer_picture (id_writer, filename)
-VALUES (2, 'bulgakov.jpg');
+VALUES (5, 'Karnegi.jpg');
+
+UPDATE main_writer_picture
+SET filename = 'Karnegi.jpg'
+WHERE id_writer = 5;
+
+SELECT * FROM main_writer_picture;
 
 # мистика 20 Россия
 
 SELECT DISTINCT
   writer.*,
-  country.name AS country_name
+  country.name AS country_name,
+  main_writer_picture.filename
 FROM writer
   INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
   INNER JOIN genre ON genre_writer.id_genre = genre.id_genre
   INNER JOIN century ON writer.id_century = century.id_century
   INNER JOIN country ON writer.id_country = country.id_country
-WHERE (century.id_century = 6) AND country.id_country = 1 AND genre_writer.id_genre IN (2, 3, 4, 5, 16);
+  INNER JOIN main_writer_picture ON writer.id_writer = main_writer_picture.id_writer
+WHERE (century.id_century = 6) AND country.id_country = 1 AND genre_writer.id_genre IN (2);
 
-SELECT * FROM genre;
+SELECT * FROM main_writer_picture;
 
 SELECT DISTINCT *
 FROM writer
@@ -134,8 +147,24 @@ FROM writer
 SELECT *
 FROM writer;
 
+SELECT DISTINCT country.name
+FROM country
+INNER JOIN writer ON country.id_country =  writer.id_country
+WHERE country.id_country = 1;
+
+SELECT DISTINCT century.name_century
+FROM century
+INNER JOIN writer ON century.id_century = writer.id_century
+WHERE century.id_century = 6;
+
+SELECT name_genre
+FROM genre
+WHERE id_genre = 3;
+
+
 SELECT *
-FROM country;
+
+FROM century;
 
 SELECT *
 FROM writer;
@@ -147,20 +176,26 @@ SELECT DATE_FORMAT("2008-11-19", '%d.%m.%Y') AS date_of;
 SELECT DATE_FORMAT("2008-11-19", '%m') AS date_of;
 
 UPDATE writer
-SET date_of_birth = '1891-05-15'
-WHERE writer.id_writer = 2;
+SET date_of_birth = '1888-11-24'
+WHERE writer.id_writer = 5;
 
 UPDATE writer
-SET date_of_death = '1961-07-02'
-WHERE writer.id_writer = 1;
+SET date_of_death = '1955-11-01'
+WHERE writer.id_writer = 5;
 
 INSERT INTO writer (date_of_birth)
 VALUES ('1961-07-02');
 
+SELECT * FROM genre_writer;
+
+INSERT INTO genre_writer(id_writer, id_genre)
+VALUES (5, 2);
+
 # добавить внешний ключ к genre_writer
 
+
 SELECT *
-FROM century;
+FROM writer;
 
 UPDATE writer
 SET id_century = 6
@@ -168,6 +203,8 @@ WHERE id_writer = 2;
 
 SELECT *
 FROM writer;
+
+SHOW TABLES ;
 
 SELECT
   writer.surname,
@@ -207,21 +244,4 @@ SELECT
   country.name
 FROM genre, country;
 
-
-SHOW VARIABLES;
-
-SHOW TABLES;
-
-SELECT *
-FROM genre_writer;
-
-SELECT *
-FROM writer;
-
-SELECT
-  date_of_birth,
-  date_of_death
-FROM writer;
-
-SELECT name
-FROM country;
+SELECT * FROM writer;

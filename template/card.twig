@@ -6,12 +6,12 @@
       {% for b in birth %}
         {{ b.date_of }}
         {% endfor %}
-      <a class="bread-crumbs">Вернуться на главную</a>
+      <a class="bread-crumbs back-link" href="#">Вернуться назад</a>
       <div class="author-container">
         <div class="row">
           <div class="main-img-author text-center col-lg-6">
             <img class="main-img img-fluid"
-                 src="content/image/main_picture/{% for item in mainWriterPicture %}{{ item.filename }}{% endfor %}">
+                 src="content/image/writer_images/{% for item in mainWriterPicture %}{{ item.filename }}{% endfor %}">
           </div>
           <div class="author-description col-lg-6">
             <h1 class="author-name">{% for item in data %}{{ item.name }} {{ item.patronymic }} {{ item.surname }}{% endfor %}</h1>
@@ -21,7 +21,7 @@
               {% endfor %}
             </div>
             <div class="signature">
-              <img class="img-size" src="content/image/signature/{% for signature in writerSignature %}{{ signature.filename }}{% endfor %}">
+              <img class="img-size" src="content/image/writer_images/{% for signature in writerSignature %}{{ signature.filename }}{% endfor %}">
             </div>
           </div>
         </div>

@@ -13,13 +13,13 @@ if ($writerId && writerExist($writerId)) {
     $mainWriterPicture = getMainWriterPicture($writerId);
 //    $yearsOfLife = getYearsOfLife($writerId);
     $allWriter = getAllWriter();
-    print_r($allWriter);
+//    print_r($allWriter);
 
     echo getView('card.twig', array(
             'data' => $data,
             'writerPicture' => $writerPicture,
             'writerSignature' => $writerSignature,
-            'mainWriterPicture' =>$mainWriterPicture
+            'mainWriterPicture' => $mainWriterPicture
         )
     );
 
