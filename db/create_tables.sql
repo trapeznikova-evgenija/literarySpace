@@ -8,6 +8,7 @@ SHOW TABLES ;
 
 SELECT * FROM genre;
 SELECT * FROM writer;
+SELECT * FROM writer_picture;
 
 SHOW VARIABLES ;
 SET CHARACTER_SET_FILESYSTEM = 'utf8';

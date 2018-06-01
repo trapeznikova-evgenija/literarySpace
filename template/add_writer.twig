@@ -5,17 +5,17 @@
     <form class="needs-validation add_writer_form" enctype="multipart/form-data" novalidate>
       {#<div class="form-group writer-name input-field-wrapper">#}
         {#<div>Имя</div>#}
-        {#<input class="form-control" name="fullName" placeholder="Федор" type="text" required>#}
+        {#<input class="form-control" name="writerName" placeholder="Федор" type="text" required>#}
         {#<div class="invalid-feedback">Заполните это поле</div>#}
       {#</div>#}
       {#<div class="form-group writer-name input-field-wrapper">#}
         {#<div>Отчество</div>#}
-        {#<input class="form-control" name="fullName" placeholder="Михайлович" type="text" required>#}
+        {#<input class="form-control" name="writerPatronymic" placeholder="Михайлович" type="text" required>#}
         {#<div class="invalid-feedback">Заполните это поле</div>#}
       {#</div>#}
       {#<div class="form-group writer-name input-field-wrapper">#}
         {#<div>Фамилия</div>#}
-        {#<input class="form-control" name="fullName" placeholder="Достоевский" type="text" required>#}
+        {#<input class="form-control" name="writerSurname" placeholder="Достоевский" type="text" required>#}
         {#<div class="invalid-feedback">Заполните это поле</div>#}
       {#</div>#}
       {#<div class="clear"></div>#}
@@ -80,16 +80,16 @@
         <input name="mainWriterPhoto" type="file" class="form-control-file form-control" id="mainWriterPhoto" required>
         <div class="invalid-feedback">Заполните это поле</div>
       </div>
-      {#<div class="form-group input-field-wrapper">#}
-        {#<label for= "writerSignature">Выберите изображение подписи писателя</label>#}
-        {#<input name="writerSignature" type="file" class="form-control-file form-control" id="writerSignature" required>#}
-        {#<div class="invalid-feedback">Заполните это поле</div>#}
-      {#</div>#}
-      {#<div class="form-group input-field-wrapper">#}
-        {#<label for="writerGallery">Выберите несколько фотографий для галереи</label>#}
-        {#<input name="writerGallery" type="file" class="form-control form-control-file" id="writerGallery" multiple required>#}
-        {#<div class="invalid-feedback">Заполните это поле</div>#}
-      {#</div>#}
+      <div class="form-group input-field-wrapper">
+        <label for= "writerSignature">Выберите изображение подписи писателя</label>
+        <input name="writerSignature" type="file" class="form-control-file form-control" id="writerSignature" required>
+        <div class="invalid-feedback">Заполните это поле</div>
+      </div>
+      <div class="form-group input-field-wrapper">
+        <label for="writerGallery">Выберите несколько фотографий для галереи</label>
+        <input name="writerGallery" type="file" class="form-control form-control-file" id="writerGallery" multiple required>
+        <div class="invalid-feedback">Заполните это поле</div>
+      </div>
       <button type="submit">Добавить писателя</button>
     </form>
   </div>

@@ -245,3 +245,40 @@ SELECT
 FROM genre, country;
 
 SELECT * FROM writer;
+
+SELECT id_century
+FROM century
+WHERE century.name_century = 'СШddsА';
+
+INSERT INTO country(name) VALUES ()
+
+SELECT LAST_INSERT_ID();
+
+START TRANSACTION;
+INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description, quote, famous_book,
+                   date_of_birth, date_of_death, id_country, years_of_life, id_century)
+    VALUES ()
+COMMIT;
+
+SELECT * FROM writer;
+
+INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
+                   quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
+VALUES ('Евгения', 'Александровна', 'Трапезникова', 'dfdf', 'dfdf', 'dfdf', 'fdf', 'dfdfd', '2018-04-28', '2080-04-04',1, 7);
+
+
+SELECT * FROM main_writer_picture;
+SELECT * FROM writer_signature;
+SELECT * FROM writer_picture;
+
+SELECT * FROM genre;
+SELECT * FROM writer;
+SELECT * FROM genre_writer;
+SELECT w.id_writer, name, genre_writer.id_genre FROM genre_writer
+LEFT JOIN writer w ON genre_writer.id_writer = w.id_writer;
+
+
+DELETE FROM writer WHERE id_writer > 5;
+
+
+SELECT * FROM writer_signature;

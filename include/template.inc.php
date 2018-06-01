@@ -196,3 +196,38 @@ function getStringOfUserFilter()
 
     return $filterString;
 }
+
+function GetCountryId($countryName)
+{
+    return dbQueryGetResult("SELECT id_country
+                                   FROM country
+                                   WHERE country.name = '{$countryName}'");
+}
+
+function AddNewCountry($countryName)
+{
+    dbQuote($countryName);
+    dbQuery("INSERT INTO country(name) VALUES ('{$countryName}')");
+    return dbQueryGetResult("SELECT LAST_INSERT_ID()");
+}
+
+function GetCenturyId($century)
+{
+    return dbQueryGetResult("SELECT id_century
+                                   FROM century
+                                   WHERE century.name_century = '{$century}'");
+}
+
+function AddNewCentury($century)
+{
+    dbQuote($century);
+    dbQuery("INSERT INTO century(name_century) VALUES ('{$century}')");
+    return dbQueryGetResult("SELECT LAST_INSERT_ID()");
+}
+
+function AddFileName($columnName, $newFullName, $writerId)
+{
+    dbQuote($newFullName);
+    echo "INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')";
+    dbQuery("INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')");
+}
