@@ -12,9 +12,8 @@ function getFilterWriter($filterString)
     );
 }
 
-function getFilter($requestKey, $columnName, $currentFilter) : string
+function getFilter($requestKey, $columnName, &$currentFilter) : string
 {
-    global $currentFilter;
     $filter = getRequestParameter($requestKey);
 
     if ($filter) {
@@ -27,7 +26,6 @@ function getFilter($requestKey, $columnName, $currentFilter) : string
     }
 
     return $currentFilter;
-
 }
 
 function getFieldValueById($id, $columnName) : string

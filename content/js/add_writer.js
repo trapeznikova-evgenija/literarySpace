@@ -24,7 +24,7 @@ $(function () {
 
         $.ajax({
             type: "POST",
-            url: 'parseWriterData.php',
+            url: 'parse_writer_data.php',
             data: data,
             cache: false,
             contentType: false,

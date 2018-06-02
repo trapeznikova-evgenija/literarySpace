@@ -81,10 +81,8 @@ function getYearsOfLife($writerId): string
     $dataOfBirth = getDateFromDb('date_of_birth', $writerId);
     $dataOfBirth = getFirstElement($dataOfBirth);
 
-
     $dataOfDeath = getDateFromDb('date_of_death', $writerId);
     $dataOfDeath = getFirstElement($dataOfDeath);
-
 
     $dataOfBirth = parseDate($dataOfBirth);
     $dataOfDeath = parseDate($dataOfDeath);
@@ -109,6 +107,11 @@ function getAllCountry()
     return dbQueryGetResult("SELECT * FROM country");
 }
 
+function getAllCentury()
+{
+    return dbQueryGetResult("SELECT * FROM century");
+}
+
 function getAllWriter()
 {
     return dbQueryGetResult("SELECT * FROM writer INNER JOIN main_writer_picture ON writer.id_writer = main_writer_picture.id_writer");
@@ -129,19 +132,13 @@ function getAllMainWriterPicture()
     return dbQueryGetResult("SELECT * FROM main_writer_picture");
 }
 
-function getAllCentury()
+function getCountryName($idCountry): string
 {
-    return dbQueryGetResult("SELECT * FROM century");
-}
-
-function getCountryName($idCountry) : string
-{
-    $resultArray =  dbQueryGetResult("SELECT DISTINCT country.name
+    $resultArray = dbQueryGetResult("SELECT DISTINCT country.name
                             FROM country
                             INNER JOIN writer ON country.id_country =  writer.id_country
                             WHERE country.id_country = {$idCountry}");
-    if ($resultArray)
-    {
+    if ($resultArray) {
         $countryName = getFirstElement($resultArray);
         return $countryName;
     }
@@ -149,15 +146,14 @@ function getCountryName($idCountry) : string
     return '';
 }
 
-function getCenturyById($idCentury) : string
+function getCenturyById($idCentury): string
 {
     $resultArray = dbQueryGetResult("SELECT DISTINCT century.name_century
                                            FROM century
                                            INNER JOIN writer ON century.id_century = writer.id_century
                                            WHERE century.id_century = {$idCentury}");
 
-    if ($resultArray)
-    {
+    if ($resultArray) {
         $centuryName = getFirstElement($resultArray);
         return $centuryName;
     }
@@ -169,8 +165,7 @@ function getGenresName($authorGenresIdsArray)
 {
     $genresString = '';
 
-    foreach ($authorGenresIdsArray as $idGenre)
-    {
+    foreach ($authorGenresIdsArray as $idGenre) {
         $genreNameArray = dbQueryGetResult("SELECT name_genre
                                                   FROM genre
                                                   WHERE id_genre = {$idGenre}");
@@ -197,37 +192,151 @@ function getStringOfUserFilter()
     return $filterString;
 }
 
-function GetCountryId($countryName)
+function getCountryIdFromName($countryName)
 {
     return dbQueryGetResult("SELECT id_country
                                    FROM country
                                    WHERE country.name = '{$countryName}'");
 }
 
-function AddNewCountry($countryName)
+function addNewCountry($countryName)
 {
     dbQuote($countryName);
     dbQuery("INSERT INTO country(name) VALUES ('{$countryName}')");
     return dbQueryGetResult("SELECT LAST_INSERT_ID()");
 }
 
-function GetCenturyId($century)
+function getCenturyIdFromName($century)
 {
     return dbQueryGetResult("SELECT id_century
                                    FROM century
                                    WHERE century.name_century = '{$century}'");
 }
 
-function AddNewCentury($century)
+function addNewCentury($century)
 {
     dbQuote($century);
     dbQuery("INSERT INTO century(name_century) VALUES ('{$century}')");
     return dbQueryGetResult("SELECT LAST_INSERT_ID()");
 }
 
-function AddFileName($columnName, $newFullName, $writerId)
+function addFileName($columnName, $newFullName, $writerId)
 {
     dbQuote($newFullName);
-//    echo "INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')";
     dbQuery("INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')");
+}
+
+function insertDataInWriterTable($textDataArray, $countryId, $centuryId)
+{
+    dbQuery("
+               INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
+                                 quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
+               VALUES ('{$textDataArray['writerName']}', '{$textDataArray['writerPatronymic']}', 
+                       '{$textDataArray['writerSurname']}', '{$textDataArray['introductionContent']}',
+                       '{$textDataArray['content']}', '{$textDataArray['cardDescription']}',
+                       '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
+                       '{$textDataArray['dateOfBirth']}', '{$textDataArray['dateOfDeath']}',
+                        {$countryId}, {$centuryId})");
+}
+
+function getCountryId($textDataArray)
+{
+    $countryName = $textDataArray['writerCountry'];
+    $countryId = getCountryIdFromName($countryName);
+    if (!$countryId) {
+        $countryId = addNewCountry($countryName);
+    }
+    $countryId = getFirstElement($countryId);
+    return $countryId;
+}
+
+function getCenturyId($textDataArray)
+{
+    $century = $textDataArray['writerCentury'];
+    $centuryId = getCenturyIdFromName($century);
+    if (!$centuryId) {
+        $centuryId = addNewCentury($century);
+    }
+    $centuryId = getFirstElement($centuryId);
+    return $centuryId;
+}
+
+function getLastInsertId()
+{
+    $writerId = dbQueryGetResult("SELECT LAST_INSERT_ID()");
+    $writerId = getFirstElement($writerId);
+    return $writerId;
+}
+
+function getGenresArray($textDataArray)
+{
+    $genreString = $textDataArray['writerGenres'];
+    $genresArray = explode(",", $genreString);
+    return $genresArray;
+}
+
+function insertDataInGenreWriterTable($genresArray, $writerId)
+{
+    foreach ($genresArray as $genreName) {
+        $genreId = dbQueryGetResult("SELECT id_genre FROM genre WHERE name_genre = '{$genreName}'");
+        if (!$genreId) {
+            dbQuery("INSERT INTO genre(name_genre) VALUE ('{$genreName}')");
+            $genreId = dbQueryGetResult("SELECT LAST_INSERT_ID()");
+        }
+        $genreId = getFirstElement($genreId);
+        dbQuery("INSERT INTO genre_writer(id_writer, id_genre) VALUE ({$writerId}, {$genreId})");
+    }
+}
+
+function insertFilenameInImagesTable($imagesDataArray, $writerId)
+{
+    foreach ($imagesDataArray as $key => $value) {
+        $newFullName = $value['tmp_name'];
+        if ($key === 'mainWriterPhoto') {
+            addFileName('main_writer_picture', $newFullName, $writerId);
+        } elseif ($key === 'writerSignature') {
+            addFileName('writer_signature', $newFullName, $writerId);
+        } elseif (is_numeric($key)) {
+            addFileName('writer_picture', $newFullName, $writerId);
+        }
+    }
+}
+
+function addNewWriterToDb($textDataArray, $imagesDataArray)
+{
+    $countryId = getCountryId($textDataArray);
+    $centuryId = getCenturyId($textDataArray);
+
+    insertDataInWriterTable($textDataArray, $countryId, $centuryId);
+
+    $genresArray = getGenresArray($textDataArray);
+    $writerId = getLastInsertId();
+
+    insertDataInGenreWriterTable($genresArray, $writerId);
+    insertFilenameInImagesTable($imagesDataArray, $writerId);
+}
+
+function addYearsOfLifeString($filteringWriter)
+{
+    $yearsOfLifeArray = array();
+    foreach ($filteringWriter as $writer) {
+        $writerId = $writer['id_writer'];
+        $yearsOfLifeArray[$writerId] = getYearsOfLife($writerId);
+        insertYearsInWriterTable($writerId, $yearsOfLifeArray);
+    }
+}
+
+function filterByGenre(&$currentFilter)
+{
+    $authorGenresIdsArray = getRequestParameter("authorGenre");
+    $authorGenresIdsArray = array_values($authorGenresIdsArray);
+    $stringGenresId = implode(',', $authorGenresIdsArray);
+
+    if ($stringGenresId) {
+        if ($currentFilter) {
+            $currentFilter = "{$currentFilter} AND genre_writer.id_genre IN ({$stringGenresId})";
+        } else {
+            $currentFilter = "genre_writer.id_genre IN ({$stringGenresId})";
+        }
+    }
 }

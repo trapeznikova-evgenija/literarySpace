@@ -12,3 +12,5 @@ require_once('request.inc.php');
 require_once('filter.inc.php');
 require_once('add_writer.inc.php');
 require_once('upload_image.inc.php');
+
+dbInitialConnect();
