@@ -1,5 +1,5 @@
 INSERT INTO writer (name, patronymic, surname, id_country, id_century, quote)
-VALUES ('Дейл', 'Бре́кенридж', 'Карнеги' , 2, 6,
+VALUES ('Дейл', 'Бре́кенридж', 'Карнеги', 2, 6,
         'Каждый человек хотя бы пять минут в день бывает дураком. Настоящая мудрость состоит в том, чтобы не превышать этот временной лимит.');
 
 
@@ -11,7 +11,8 @@ VALUES ('Михаил', 'Афанасьевич', 'Булгаков', 'Росс�
 SELECT *
 FROM century;
 
-SELECT * FROM writer;
+SELECT *
+FROM writer;
 
 UPDATE writer
 SET
@@ -61,7 +62,8 @@ UPDATE writer
 SET card_description = 'Американский педагог, лектор, писатель, оратор-мотиватор.'
 WHERE writer.id_writer = 5;
 
-SELECT * FROM writer;
+SELECT *
+FROM writer;
 
 UPDATE writer
 SET famous_book = '"Старик и море",  "Прощай, оружие!"';
@@ -119,7 +121,8 @@ UPDATE main_writer_picture
 SET filename = 'Karnegi.jpg'
 WHERE id_writer = 5;
 
-SELECT * FROM main_writer_picture;
+SELECT *
+FROM main_writer_picture;
 
 # мистика 20 Россия
 
@@ -135,7 +138,8 @@ FROM writer
   INNER JOIN main_writer_picture ON writer.id_writer = main_writer_picture.id_writer
 WHERE (century.id_century = 6) AND country.id_country = 1 AND genre_writer.id_genre IN (2);
 
-SELECT * FROM main_writer_picture;
+SELECT *
+FROM main_writer_picture;
 
 SELECT DISTINCT *
 FROM writer
@@ -149,12 +153,12 @@ FROM writer;
 
 SELECT DISTINCT country.name
 FROM country
-INNER JOIN writer ON country.id_country =  writer.id_country
+  INNER JOIN writer ON country.id_country = writer.id_country
 WHERE country.id_country = 1;
 
 SELECT DISTINCT century.name_century
 FROM century
-INNER JOIN writer ON century.id_century = writer.id_century
+  INNER JOIN writer ON century.id_century = writer.id_century
 WHERE century.id_century = 6;
 
 SELECT name_genre
@@ -186,9 +190,10 @@ WHERE writer.id_writer = 5;
 INSERT INTO writer (date_of_birth)
 VALUES ('1961-07-02');
 
-SELECT * FROM genre_writer;
+SELECT *
+FROM genre_writer;
 
-INSERT INTO genre_writer(id_writer, id_genre)
+INSERT INTO genre_writer (id_writer, id_genre)
 VALUES (5, 2);
 
 # добавить внешний ключ к genre_writer
@@ -204,7 +209,7 @@ WHERE id_writer = 2;
 SELECT *
 FROM writer;
 
-SHOW TABLES ;
+SHOW TABLES;
 
 SELECT
   writer.surname,
@@ -236,49 +241,3 @@ VALUES ('Роман-эпопея'),
   ('Антиутопия'),
   ('Пьеса');
 
-SELECT name_genre
-FROM genre;
-
-SELECT
-  genre.name_genre,
-  country.name
-FROM genre, country;
-
-SELECT * FROM writer;
-
-SELECT id_century
-FROM century
-WHERE century.name_century = 'СШddsА';
-
-INSERT INTO country(name) VALUES ()
-
-SELECT LAST_INSERT_ID();
-
-START TRANSACTION;
-INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description, quote, famous_book,
-                   date_of_birth, date_of_death, id_country, years_of_life, id_century)
-    VALUES ()
-COMMIT;
-
-SELECT * FROM writer;
-
-INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
-                   quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
-VALUES ('Евгения', 'Александровна', 'Трапезникова', 'dfdf', 'dfdf', 'dfdf', 'fdf', 'dfdfd', '2018-04-28', '2080-04-04',1, 7);
-
-
-SELECT * FROM main_writer_picture;
-SELECT * FROM writer_signature;
-SELECT * FROM writer_picture;
-
-SELECT * FROM genre;
-SELECT * FROM writer;
-SELECT * FROM genre_writer;
-SELECT w.id_writer, name, genre_writer.id_genre FROM genre_writer
-LEFT JOIN writer w ON genre_writer.id_writer = w.id_writer;
-
-
-DELETE FROM writer WHERE id_writer > 5;
-
-
-SELECT * FROM writer_signature;

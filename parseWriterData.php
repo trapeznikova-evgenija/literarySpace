@@ -4,7 +4,6 @@ header('Content-Type: text/html; charset=UTF-8');
 dbInitialConnect();
 
 $textDataArray = $_POST;
-//$imagesDataArray = $_FILES;
 
 $imagesDataArray = uploadImages();
 print_r($imagesDataArray);
@@ -65,23 +64,22 @@ foreach ($genresArray as $genreName)
        $genreId = dbQueryGetResult("SELECT LAST_INSERT_ID()");
     }
     $genreId = getFirstElement($genreId);
-    echo '$genreId ' . $genreId . PHP_EOL;
+//    echo '$genreId ' . $genreId . PHP_EOL;
     echo "INSERT INTO genre_writer(id_writer, id_genre) VALUE ({$writerId}, {$genreId})";
     dbQuery("INSERT INTO genre_writer(id_writer, id_genre) VALUE ({$writerId}, {$genreId})");
 }
 
+
 foreach ($imagesDataArray as $key => $value)
 {
-//    print_r($value['name']);
-    $fullOldName = $value['name'];
-    $format =  stristr($fullOldName, '.');
-    $newFullName = $value['tmp_name'] . $format;
+    $newFullName = $value['tmp_name'];
     echo $newFullName . PHP_EOL;
 
-    if ($key = 'mainWriterPhoto')
+    echo $key;
+    if ($key === 'mainWriterPhoto')
     {
         AddFileName('main_writer_picture', $newFullName, $writerId);
-    } else if ($key = 'writerSignature')
+    } else if ($key === 'writerSignature')
     {
         AddFileName('writer_signature', $newFullName, $writerId);
     } else if (is_numeric($key)) //its gallery picture
@@ -90,7 +88,5 @@ foreach ($imagesDataArray as $key => $value)
     }
 }
 
-//print_r($_POST);
-//print_r($_FILES);
 
 

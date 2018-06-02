@@ -228,6 +228,6 @@ function AddNewCentury($century)
 function AddFileName($columnName, $newFullName, $writerId)
 {
     dbQuote($newFullName);
-    echo "INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')";
+//    echo "INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')";
     dbQuery("INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')");
 }
