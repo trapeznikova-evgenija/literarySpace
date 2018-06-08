@@ -309,3 +309,4 @@ WHERE id_writer = 24;
 SELECT * FROM genre_writer;
 SELECT * FROM genre WHERE id_genre = 6;
 
+SELECT * FROM user WHERE user.username = 'admin';

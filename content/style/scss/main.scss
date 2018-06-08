@@ -557,3 +557,41 @@ body
   padding-right: 25px;
   float: right;
 }
+
+.modal
+{
+  font-family: $playfairRegular;
+
+  .button-search
+  {
+    font-size: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.auth-form
+{
+
+}
+
+.auth-input
+{
+  color: $mainColor;
+
+  &:focus
+  {
+    color: $mainColor;
+  }
+}
+
+.modal-auth-title
+{
+  font-size: 28px;
+}
+
+.auth-input-label
+{
+  padding-bottom: 10px;
+  font-size: 18px;
+}

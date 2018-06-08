@@ -37,6 +37,16 @@ CREATE TABLE IF NOT EXISTS century
   PRIMARY KEY (id_century)
 ) ENGINE=InnoDB;
 
+CREATE TABLE IF NOT EXISTS user
+(
+  id_user INT(11) AUTO_INCREMENT NOT NULL,
+  username VARCHAR(255),
+  password VARCHAR(255),
+  PRIMARY KEY (id_user)
+) ENGINE=InnoDB;
+
+SHOW TABLES;
+
 ALTER TABLE writer
     ADD FOREIGN KEY (id_country) REFERENCES country (id_country)
 ON DELETE CASCADE;
