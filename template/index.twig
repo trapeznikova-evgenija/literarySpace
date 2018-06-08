@@ -1,10 +1,10 @@
 {% extends 'base.twig' %}
 
 {% block content %}
-  <div class="header-main container-fluid">
+  <div class="header-main container-fluid" xmlns="http://www.w3.org/1999/html">
     <div class="container description-block">
       <div class="header-main-text">
-        Проект, посвященный творцам литературного мира. Мы поможем найти писателей по отобранным критериям.
+        Проект, посвященный творцам литературного мира. <br> Мы поможем найти писателей по отобранным критериям.
       </div>
     </div>
   </div>
@@ -64,10 +64,10 @@
     <div class="search-field-wrapper container-fluid">
       <div class="container">
         <div class="row">
-          <form action="result_of_search.php" method="post" class="feedback-form search-field col-12 col-xl-6">
+          <form action="result_of_search.php" method="post" class="feedback-form search-field col-12 col-xl-7">
             <div class="search-field-title">Найдите писателей</div>
             <div class="genre-input">
-              <div>По жанру</div>
+              <div class="search-form-input-title">По жанру</div>
               <select name="authorGenre[]" class="selectpicker dropdown-genre padding-select" data-width="100%" multiple
                       title="Выберите один или несколько жанров">
                 {% for genre in allGenre %}
@@ -76,9 +76,9 @@
               </select>
               <small>Например: Психология, Драма</small>
             </div>
-            <div class="row">
+            <div class="row century-country-row">
               <div class="col-4">
-                <div>По веку</div>
+                <div class="search-form-input-title">По веку</div>
                 <select name="authorCentury" class="selectpicker dropdown-century padding-select" data-width="100%"
                         title="Выберите век">
                   {% for century in allCentury %}
@@ -87,7 +87,7 @@
                 </select>
               </div>
               <div class="col-8">
-                <div>По стране</div>
+                <div class="search-form-input-title">По стране</div>
                 <select name="authorCountry" class="selectpicker dropdown-country padding-select" data-width="100%"
                         title="Выберите страну писателя">
                   {% for country in allCountry %}
@@ -101,51 +101,6 @@
         </div>
       </div>
     </div>
-    <div class="container categories">
-      <h2 class="main-title">Категории</h2>
-      <div class="row">
-        <div class="col-12 col-sm-4">
-          <div class="category">
-            Лауреаты Нобелевской премии
-          </div>
-        </div>
-        <div class="col-12 col-sm-4">
-          <div class="category">
-            Лауреаты Нобелевской премии
-          </div>
-        </div>
-        <div class="col-12 col-sm-4">
-          <div class="category">
-            Лауреаты Нобелевской премии
-          </div>
-        </div>
-        <div class="col-12 col-sm-4">
-          <div class="category">
-            Лауреаты Нобелевской премии
-          </div>
-        </div>
-        <div class="col-12 col-sm-4">
-          <div class="category">
-            Лауреаты Нобелевской премии
-          </div>
-        </div>
-        <div class="col-12 col-sm-4">
-          <div class="category">
-            Лауреаты Нобелевской премии
-          </div>
-        </div>
-      </div>
-      <button class="button button-show-more">Показать еще</button>
-    </div>
   </main>
-  <footer>
-    <div class="container">
-      <ul class="footer-menu">
-        <li class="footer-menu-item"><a>Домой</a></li>
-        <li class="footer-menu-item"><a>Категории</a></li>
-        <li class="footer-menu-item"><a>Поиск</a></li>
-      </ul>
-    </div>
-  </footer>
 {% endblock content %}
 

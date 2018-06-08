@@ -5,7 +5,14 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        dots: true
+        dots: false,
+        arrow: true
+    });
+
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        gutter: 10
     });
 
     $('.selectpicker').selectpicker();

@@ -1280,69 +1280,76 @@
       <RefTableName>country</RefTableName>
       <RefColNames>id_country</RefColNames>
     </foreign-key>
-    <foreign-key id="305" parent="243" name="writer_ibfk_3">
+    <foreign-key id="305" parent="243" name="writer_ibfk_4">
+      <ColNames>id_country</ColNames>
+      <RefSchemaName>literary_space</RefSchemaName>
+      <RefTableName>country</RefTableName>
+      <RefColNames>id_country</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="306" parent="243" name="writer_ibfk_3">
       <ColNames>id_century</ColNames>
       <RefSchemaName>literary_space</RefSchemaName>
       <RefTableName>century</RefTableName>
       <RefColNames>id_century</RefColNames>
     </foreign-key>
-    <column id="306" parent="244" name="id_writer_picture">
+    <column id="307" parent="244" name="id_writer_picture">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="244" name="id_writer">
+    <column id="308" parent="244" name="id_writer">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="244" name="filename">
+    <column id="309" parent="244" name="filename">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="309" parent="244" name="id_writer">
+    <index id="310" parent="244" name="id_writer">
       <ColNames>id_writer</ColNames>
     </index>
-    <key id="310" parent="244" name="PRIMARY">
+    <key id="311" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_writer_picture</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="311" parent="244" name="writer_picture_ibfk_1">
+    <foreign-key id="312" parent="244" name="writer_picture_ibfk_1">
       <ColNames>id_writer</ColNames>
       <RefSchemaName>literary_space</RefSchemaName>
       <RefTableName>writer</RefTableName>
       <RefColNames>id_writer</RefColNames>
     </foreign-key>
-    <column id="312" parent="245" name="id_writer_signature">
+    <column id="313" parent="245" name="id_writer_signature">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="245" name="id_writer">
+    <column id="314" parent="245" name="id_writer">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="245" name="filename">
+    <column id="315" parent="245" name="filename">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="315" parent="245" name="id_writer">
+    <index id="316" parent="245" name="id_writer">
       <ColNames>id_writer</ColNames>
     </index>
-    <key id="316" parent="245" name="PRIMARY">
+    <key id="317" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id_writer_signature</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="317" parent="245" name="writer_signature_ibfk_1">
+    <foreign-key id="318" parent="245" name="writer_signature_ibfk_1">
       <ColNames>id_writer</ColNames>
       <RefSchemaName>literary_space</RefSchemaName>
       <RefTableName>writer</RefTableName>

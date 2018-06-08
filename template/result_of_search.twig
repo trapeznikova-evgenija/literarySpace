@@ -6,28 +6,30 @@
       <a href="index.php" class="bread-crumbs">Вернуться на главную</a>
       <h2 class="main-title">Найденные писатели</h2>
       <div class="search-options">{{ filterString }}</div>
-      <div class="row search-card-container">
+      <div class="grid search-card-container">
         {% for writer in allWriter %}
-          <div class="col-12 col-lg-4">
+          {#<div class="col-12 col-lg-4">#}
             <a href="card.php?writerId={{ writer.id_writer }}">
-              <div class="search-card">
+              <div class="search-card grid-item">
                 <div>
-                  <img class="img-fluid" src="content/image/writer_images/{{ writer.filename }}">
+                  <img class="search-card-image img-fluid" src="content/image/writer_images/{{ writer.filename }}">
                 </div>
                 <div class="author-card-name">{{ writer.name }} {{ writer.surname }}</div>
                 <div class="years-of-life">{{ writer.years_of_life }}</div>
-                <div class="author-card-description">
-                  {{ writer.card_description }}
-                </div>
-                <div class="popular-book">
-                  {{ writer.famous_book }}
+                <div class="author-card-info">
+                  <div class="author-card-description">
+                    {{ writer.card_description }}
+                  </div>
+                  <div class="popular-book">
+                    {{ writer.famous_book }}
+                  </div>
                 </div>
               </div>
             </a>
-          </div>
+          {#</div>#}
         {% endfor %}
       </div>
-      <button class="button button-show-more">Показать еще</button>
+      {#<button class="button button-search">Показать еще</button>#}
     </div>
   </main>
 {% endblock %}

@@ -5,7 +5,7 @@
     <div class="container common author-main-container">
       {% for b in birth %}
         {{ b.date_of }}
-        {% endfor %}
+      {% endfor %}
       <a class="bread-crumbs back-link" href="#">Вернуться назад</a>
       <div class="author-container">
         <div class="row">
@@ -20,9 +20,14 @@
                 {{ item.quote }}
               {% endfor %}
             </div>
-            <div class="signature">
-              <img class="img-size" src="content/image/writer_images/{% for signature in writerSignature %}{{ signature.filename }}{% endfor %}">
-            </div>
+            {% for signature in writerSignature %}
+              {% if signature.filename %}
+                <div class="signature">
+                  <img class="img-size"
+                       src="content/image/writer_images/{{ signature.filename }}">
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
         <div class="main-info">

@@ -228,7 +228,19 @@ function addFileName($columnName, $newFullName, $writerId)
 
 function insertDataInWriterTable($textDataArray, $countryId, $centuryId)
 {
-    dbQuery("
+    if ($textDataArray['dateOfDeath'] == '') {
+        echo "dateOfDeath = '' !!!!!!!!!!!!!!!!!!!!!" . PHP_EOL;
+        dbQuery("
+               INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
+                                 quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
+               VALUES ('{$textDataArray['writerName']}', '{$textDataArray['writerPatronymic']}', 
+                       '{$textDataArray['writerSurname']}', '{$textDataArray['introductionContent']}',
+                       '{$textDataArray['content']}', '{$textDataArray['cardDescription']}',
+                       '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
+                       '{$textDataArray['dateOfBirth']}', NULL ,
+                        {$countryId}, {$centuryId})");
+    } else {
+        dbQuery("
                INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
                                  quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
                VALUES ('{$textDataArray['writerName']}', '{$textDataArray['writerPatronymic']}', 
@@ -237,6 +249,7 @@ function insertDataInWriterTable($textDataArray, $countryId, $centuryId)
                        '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
                        '{$textDataArray['dateOfBirth']}', '{$textDataArray['dateOfDeath']}',
                         {$countryId}, {$centuryId})");
+    }
 }
 
 function getCountryId($textDataArray)
@@ -290,9 +303,14 @@ function insertDataInGenreWriterTable($genresArray, $writerId)
 
 function insertFilenameInImagesTable($imagesDataArray, $writerId)
 {
+    if ($imagesDataArray['writerSignature'] == '') {
+        echo '!!!';
+        addFileName('writer_signature', NULL, $writerId);
+    }
     foreach ($imagesDataArray as $key => $value) {
         $newFullName = $value['tmp_name'];
         if ($key === 'mainWriterPhoto') {
+            echo 'mainWriterPhoto ' . $newFullName . PHP_EOL;
             addFileName('main_writer_picture', $newFullName, $writerId);
         } elseif ($key === 'writerSignature') {
             addFileName('writer_signature', $newFullName, $writerId);
@@ -306,11 +324,19 @@ function addNewWriterToDb($textDataArray, $imagesDataArray)
 {
     $countryId = getCountryId($textDataArray);
     $centuryId = getCenturyId($textDataArray);
+    echo "in function addNewWriterToDB()" . PHP_EOL;
+    print_r($textDataArray);
+    print_r($imagesDataArray);
+    echo PHP_EOL;
 
+    echo 'Перед insertDataInWriterTable' . PHP_EOL;
     insertDataInWriterTable($textDataArray, $countryId, $centuryId);
 
     $genresArray = getGenresArray($textDataArray);
+    echo 'genresArray ' . PHP_EOL;
+    print_r($genresArray);
     $writerId = getLastInsertId();
+    echo "LAST INSERT ID {$writerId}";
 
     insertDataInGenreWriterTable($genresArray, $writerId);
     insertFilenameInImagesTable($imagesDataArray, $writerId);

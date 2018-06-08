@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Comfortaa-Bold;
+  src: url("../../fonts/Comfortaa-Bold.ttf"); }
+@font-face {
+  font-family: Comfortaa-Light;
+  src: url("../../fonts/Comfortaa-Light.ttf"); }
+@font-face {
+  font-family: Comfortaa-Regular;
+  src: url("../../fonts/Comfortaa-Regular.ttf"); }
+@font-face {
+  font-family: PlayfairDisplay-Black;
+  src: url("../../fonts/PlayfairDisplay-Black.ttf"); }
+@font-face {
+  font-family: PlayfairDisplay-BlackItalic;
+  src: url("../../fonts/PlayfairDisplay-BlackItalic.ttf"); }
+@font-face {
+  font-family: PlayfairDisplay-Bold;
+  src: url("../../fonts/PlayfairDisplay-Bold.ttf"); }
+@font-face {
+  font-family: PlayfairDisplay-Italic;
+  src: url("../../fonts/PlayfairDisplay-Italic.ttf"); }
+@font-face {
+  font-family: PlayfairDisplay-Regular;
+  src: url("../../fonts/PlayfairDisplay-Regular.ttf"); }
+
+/*# sourceMappingURL=fonts.css.map */

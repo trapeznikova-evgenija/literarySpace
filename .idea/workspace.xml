@@ -2,21 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd9601a6-9980-4240-b416-76263bc18725" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/content/style/scss/fonts.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/template/blocks/modal.twig" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fcc78d81-4b69-46c5-8751-e9c2e7bcb699.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/fcc78d81-4b69-46c5-8751-e9c2e7bcb699.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/add_writer.php" afterPath="$PROJECT_DIR$/add_writer.php" />
-      <change beforePath="$PROJECT_DIR$/card.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/card.php" afterPath="$PROJECT_DIR$/card.php" />
-      <change beforePath="$PROJECT_DIR$/content/js/add_writer.js" afterPath="$PROJECT_DIR$/content/js/add_writer.js" />
+      <change beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change beforePath="$PROJECT_DIR$/content/js/main.js" afterPath="$PROJECT_DIR$/content/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/_variables.scss" afterPath="$PROJECT_DIR$/content/style/scss/_variables.scss" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.css" afterPath="$PROJECT_DIR$/content/style/scss/main.css" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.css.map" afterPath="$PROJECT_DIR$/content/style/scss/main.css.map" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.scss" afterPath="$PROJECT_DIR$/content/style/scss/main.scss" />
+      <change beforePath="$PROJECT_DIR$/db/create_tables.sql" afterPath="$PROJECT_DIR$/db/create_tables.sql" />
       <change beforePath="$PROJECT_DIR$/db/fill_tables.sql" afterPath="$PROJECT_DIR$/db/fill_tables.sql" />
-      <change beforePath="$PROJECT_DIR$/include/common.inc.php" afterPath="$PROJECT_DIR$/include/common.inc.php" />
-      <change beforePath="$PROJECT_DIR$/include/filter.inc.php" afterPath="$PROJECT_DIR$/include/filter.inc.php" />
       <change beforePath="$PROJECT_DIR$/include/template.inc.php" afterPath="$PROJECT_DIR$/include/template.inc.php" />
-      <change beforePath="$PROJECT_DIR$/include/upload_image.inc.php" afterPath="$PROJECT_DIR$/include/upload_image.inc.php" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/parseWriterData.php" afterPath="$PROJECT_DIR$/parse_writer_data.php" />
-      <change beforePath="$PROJECT_DIR$/result_of_search.php" afterPath="$PROJECT_DIR$/result_of_search.php" />
-      <change beforePath="$PROJECT_DIR$/search-result.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
+      <change beforePath="$PROJECT_DIR$/template/add_writer.twig" afterPath="$PROJECT_DIR$/template/add_writer.twig" />
+      <change beforePath="$PROJECT_DIR$/template/base.twig" afterPath="$PROJECT_DIR$/template/base.twig" />
+      <change beforePath="$PROJECT_DIR$/template/blocks/scripts.twig" afterPath="$PROJECT_DIR$/template/blocks/scripts.twig" />
+      <change beforePath="$PROJECT_DIR$/template/blocks/style.twig" afterPath="$PROJECT_DIR$/template/blocks/style.twig" />
+      <change beforePath="$PROJECT_DIR$/template/card.twig" afterPath="$PROJECT_DIR$/template/card.twig" />
+      <change beforePath="$PROJECT_DIR$/template/index.twig" afterPath="$PROJECT_DIR$/template/index.twig" />
+      <change beforePath="$PROJECT_DIR$/template/result_of_search.twig" afterPath="$PROJECT_DIR$/template/result_of_search.twig" />
+      <change beforePath="$PROJECT_DIR$/text_editor.html" afterPath="$PROJECT_DIR$/text_editor.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,41 +49,108 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="literary_space@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="literary_space@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="parse_writer_data.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parse_writer_data.php">
+      <file leaf-file-name="card.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/card.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            <state relative-caret-position="144">
+              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result_of_search.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/result_of_search.php">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="534" column="1" lean-forward="true" selection-start-line="534" selection-start-column="1" selection-end-line="534" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/style/scss/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_writer.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1692">
+              <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fonts.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/style/scss/fonts.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/index.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1836">
+              <caret line="102" column="10" lean-forward="false" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/base.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+              <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="card.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/card.php">
+      <file leaf-file-name="modal.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/blocks/modal.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+              <folding>
+                <element signature="e#466#473#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writer_gallery.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/blocks/writer_gallery.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/blocks/style.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,10 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>genre</find>
-      <find>main-t</find>
-      <find>back</find>
-      <find>butt</find>
       <find>card</find>
       <find>box</find>
       <find>head</find>
@@ -112,6 +182,22 @@
       <find>getString</find>
       <find>Get</find>
       <find>$writerId</find>
+      <find>getVi</find>
+      <find>addNew</find>
+      <find>addNewW</find>
+      <find>signat</find>
+      <find>font-fa</find>
+      <find>des</find>
+      <find>search-f</find>
+      <find>century-c</find>
+      <find>slick</find>
+      <find>button-se</find>
+      <find>search-opt</find>
+      <find>auth</find>
+      <find>author-des</find>
+      <find>main</find>
+      <find>writer-filt</find>
+      <find>genre-in</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,9 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/template/style/scss/_variables.scss" />
-        <option value="$PROJECT_DIR$/bower.json" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/dist/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/js/dist/index.js" />
@@ -136,41 +219,44 @@
         <option value="$PROJECT_DIR$/tinymce/tinymce_init" />
         <option value="$PROJECT_DIR$/tinymce/tinymce_init.js" />
         <option value="$PROJECT_DIR$/editor.html" />
-        <option value="$PROJECT_DIR$/text_editor.html" />
         <option value="$PROJECT_DIR$/card.html" />
         <option value="$PROJECT_DIR$/db/tables.sql" />
         <option value="$PROJECT_DIR$/include/database.inc.php" />
         <option value="$PROJECT_DIR$/template/blocks/index.twig" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/template/blocks/style.twig" />
         <option value="$PROJECT_DIR$/search-result.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/fcc78d81-4b69-46c5-8751-e9c2e7bcb699/console.sql" />
         <option value="$PROJECT_DIR$/include/config.inc.php" />
-        <option value="$PROJECT_DIR$/template/index.twig" />
         <option value="$PROJECT_DIR$/include/request.inc.php" />
         <option value="$PROJECT_DIR$/template/add_writer.html" />
-        <option value="$PROJECT_DIR$/template/base.twig" />
-        <option value="$PROJECT_DIR$/template/blocks/scripts.twig" />
-        <option value="$PROJECT_DIR$/content/js/main.js" />
-        <option value="$PROJECT_DIR$/content/style/scss/main.scss" />
         <option value="$PROJECT_DIR$/include/add_writer.inc.php" />
         <option value="$PROJECT_DIR$/content/js/add_writer.js" />
-        <option value="$PROJECT_DIR$/template/card.twig" />
         <option value="$PROJECT_DIR$/template/blocks/writer_gallery.twig" />
-        <option value="$PROJECT_DIR$/template/result_of_search.twig" />
-        <option value="$PROJECT_DIR$/db/create_tables.sql" />
-        <option value="$PROJECT_DIR$/template/add_writer.twig" />
         <option value="$PROJECT_DIR$/parseWriterData.php" />
         <option value="$PROJECT_DIR$/include/common.inc.php" />
         <option value="$PROJECT_DIR$/add_writer.php" />
         <option value="$PROJECT_DIR$/card.php" />
         <option value="$PROJECT_DIR$/include/upload_image.inc.php" />
-        <option value="$PROJECT_DIR$/db/fill_tables.sql" />
         <option value="$PROJECT_DIR$/include/filter.inc.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/parse_writer_data.php" />
-        <option value="$PROJECT_DIR$/include/template.inc.php" />
         <option value="$PROJECT_DIR$/result_of_search.php" />
+        <option value="$PROJECT_DIR$/db/create_tables.sql" />
+        <option value="$PROJECT_DIR$/include/template.inc.php" />
+        <option value="$PROJECT_DIR$/db/fill_tables.sql" />
+        <option value="$PROJECT_DIR$/template/card.twig" />
+        <option value="$PROJECT_DIR$/template/blocks/style.twig" />
+        <option value="$PROJECT_DIR$/content/style/scss/fonts.scss" />
+        <option value="$PROJECT_DIR$/text_editor.html" />
+        <option value="$PROJECT_DIR$/content/js/main.js" />
+        <option value="$PROJECT_DIR$/template/index.twig" />
+        <option value="$PROJECT_DIR$/template/blocks/scripts.twig" />
+        <option value="$PROJECT_DIR$/content/style/scss/_variables.scss" />
+        <option value="$PROJECT_DIR$/template/result_of_search.twig" />
+        <option value="$PROJECT_DIR$/template/add_writer.twig" />
+        <option value="$PROJECT_DIR$/template/blocks/modal.twig" />
+        <option value="$PROJECT_DIR$/template/base.twig" />
+        <option value="$PROJECT_DIR$/content/style/scss/main.scss" />
       </list>
     </option>
   </component>
@@ -195,11 +281,11 @@
       <path value="$PROJECT_DIR$" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="46" />
-    <option name="y" value="-1" />
-    <option name="width" value="1398" />
-    <option name="height" value="856" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="50" />
+    <option name="y" value="47" />
+    <option name="width" value="1396" />
+    <option name="height" value="820" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -216,14 +302,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
               <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bower_components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bower_components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="desandro-matches-selector" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bower_components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="masonry-layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bower_components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="masonry-layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bower_components" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="masonry-layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="masonry.pkgd.js" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
               <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
@@ -235,6 +351,25 @@
               <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="content" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="image" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="style" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="literarySpace" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="style" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="scss" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="literarySpace" type="b2602c69:ProjectViewProjectNode" />
@@ -266,13 +401,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="last_opened_file_path" value="$USER_HOME$/PhpstormProjects/DataBases-labs" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.detected.package.stylelint" value="true" />
@@ -380,35 +517,41 @@
       <workItem from="1527746442656" duration="58000" />
       <workItem from="1527771478290" duration="3053000" />
       <workItem from="1527862679108" duration="32381000" />
-      <workItem from="1527920421048" duration="9732000" />
+      <workItem from="1527920421048" duration="13838000" />
+      <workItem from="1528171763672" duration="85000" />
+      <workItem from="1528180906155" duration="6512000" />
+      <workItem from="1528195434727" duration="1682000" />
+      <workItem from="1528300990431" duration="763000" />
+      <workItem from="1528352909247" duration="14635000" />
+      <workItem from="1528456312083" duration="20688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="338397000" />
+    <option name="totallyTimeSpent" value="386868000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="-1" width="1602" height="912" extended-state="7" />
+    <frame x="50" y="47" width="1602" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.144375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36351874" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28460544" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3182406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.163125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858992" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43078914" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3182406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858992" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -425,39 +568,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/popper.js/dist/popper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/popper.js/dist/umd/popper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/popper.js/dist/popper.js.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4698">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/popper.js/dist/popper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3450">
-          <caret line="2231" column="10" lean-forward="false" selection-start-line="2231" selection-start-column="10" selection-end-line="2231" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/template/style/scss/_variables.scss" />
-    <entry file="file://$PROJECT_DIR$/tinymce/js/tinymce/tinymce.min.js" />
     <entry file="file://$PROJECT_DIR$/tinymce/js/tinymce/init.js" />
     <entry file="file://$PROJECT_DIR$/tinymce/js/tinymce/themes/modern/theme.min.js" />
     <entry file="file://$PROJECT_DIR$/tinymce/plugins/emoticons/img/smiley-cool.gif">
@@ -475,34 +585,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/lightGallery/.bower.json" />
-    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/blocks/style.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="81" lean-forward="false" selection-start-line="7" selection-start-column="81" selection-end-line="7" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="69" lean-forward="false" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/card.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/card.html" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fcc78d81-4b69-46c5-8751-e9c2e7bcb699/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -510,18 +594,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/config.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/request.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -533,13 +609,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/add_writer.html" />
-    <entry file="file://$PROJECT_DIR$/template/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/scss/_forms.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -554,90 +623,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="386" column="2" lean-forward="false" selection-start-line="386" selection-start-column="2" selection-end-line="386" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/blocks/scripts.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="81" lean-forward="false" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/add_writer.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/js/add_writer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/fcc78d81-4b69-46c5-8751-e9c2e7bcb699.SCHEMA:literary_space">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>fcc78d81-4b69-46c5-8751-e9c2e7bcb699.SCHEMA:literary_space</OriginalElement>
-          <nodes>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.main_writer_picture</node>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.country</node>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer_signature</node>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.genre_writer</node>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.century</node>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer_picture</node>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.genre</node>
-            <node x="" y="">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8020833333333334" x="537.0" y="326.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/search-result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/card.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/create_tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/search-result.html" />
     <entry file="das://table:/57dff86d/fcc78d81-4b69-46c5-8751-e9c2e7bcb699/literary_space.century">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -649,94 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/blocks/writer_gallery.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text_editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="76" column="12" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="76" selection-end-column="12" />
-          <folding>
-            <marker date="1527910409017" expanded="true" signature="425:3461" ph="..." />
-            <marker date="1527910409017" expanded="true" signature="3729:4376" ph="..." />
-            <marker date="1527910409017" expanded="true" signature="3729:4713" ph="..." />
-            <marker date="1527910409017" expanded="true" signature="4050:4376" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/result_of_search.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="76" lean-forward="false" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_writer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/template.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="331" column="64" lean-forward="true" selection-start-line="331" selection-start-column="64" selection-end-line="331" selection-end-column="64" />
-          <folding>
-            <marker date="1527929988461" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
-            <marker date="1527929988461" expanded="true" signature="542:581" ph="SELECT * FRO... writer" />
-            <marker date="1527929988461" expanded="true" signature="669:708" ph="SELECT * FRO... writer" />
-            <marker date="1527929988461" expanded="true" signature="796:869" ph="SELECT write... writer_signature" />
-            <marker date="1527929988461" expanded="true" signature="959:1038" ph="SELECT main_... main_writer_picture" />
-            <marker date="1527929988461" expanded="true" signature="1548:1595" ph="SELECT ${{$c... " />
-            <marker date="1527929988461" expanded="true" signature="2739:2758" ph="SELECT * FRO... genre" />
-            <marker date="1527929988461" expanded="true" signature="2821:2842" ph="SELECT * FRO... country" />
-            <marker date="1527929988461" expanded="true" signature="2905:2926" ph="SELECT * FRO... century" />
-            <marker date="1527929988461" expanded="true" signature="2988:3091" ph="SELECT * FRO... writer" />
-            <marker date="1527929988461" expanded="true" signature="3151:3198" ph="SELECT date_... writer" />
-            <marker date="1527929988461" expanded="true" signature="3284:3369" ph="UPDATE writer... " />
-            <marker date="1527929988461" expanded="true" signature="3453:3486" ph="SELECT * FRO... main_writer_picture" />
-            <marker date="1527929988461" expanded="true" signature="3576:3790" ph="SELECT DISTI... country" />
-            <marker date="1527929988461" expanded="true" signature="4021:4287" ph="SELECT DISTI... century" />
-            <marker date="1527929988461" expanded="true" signature="4603:4749" ph="SELECT name_... genre" />
-            <marker date="1527929988461" expanded="true" signature="5497:5618" ph="SELECT id_co... country" />
-            <marker date="1527929988461" expanded="true" signature="5497:5620" ph="SELECT id_co... country" />
-            <marker date="1527929988461" expanded="true" signature="5497:5634" ph="SELECT id_co... country" />
-            <marker date="1527929988461" expanded="true" signature="5497:5635" ph="SELECT id_co... country" />
-            <marker date="1527929988461" expanded="true" signature="5721:5772" ph="INSERT INTO country... " />
-            <marker date="1527929988461" expanded="true" signature="5906:6048" ph="SELECT id_ce... century" />
-            <marker date="1527929988461" expanded="true" signature="6126:6145" ph="INSERT INTO century... " />
-            <marker date="1527929988461" expanded="true" signature="6126:6181" ph="INSERT INTO century... " />
-            <marker date="1527929988461" expanded="true" signature="6345:6429" ph="INSERT INTO $... " />
-            <marker date="1527929988461" expanded="true" signature="6540:6765" ph="INSERT INTO writer... " />
-            <marker date="1527929988461" expanded="true" signature="6540:6799" ph="INSERT INTO writer... " />
-            <marker date="1527929988461" expanded="true" signature="6540:6863" ph="INSERT INTO writer... " />
-            <marker date="1527929988461" expanded="true" signature="6540:6900" ph="INSERT INTO writer... " />
-            <marker date="1527929988461" expanded="true" signature="6540:6966" ph="INSERT INTO writer... " />
-            <marker date="1527929988461" expanded="true" signature="6540:7145" ph="INSERT INTO writer... " />
-            <marker date="1527929988461" expanded="true" signature="6540:7265" ph="INSERT INTO writer... " />
-            <marker date="1527929988461" expanded="true" signature="8324:8384" ph="SELECT id_ge... genre" />
-            <marker date="1527929988461" expanded="true" signature="8434:8486" ph="INSERT INTO genre... " />
-            <marker date="1527929988461" expanded="true" signature="8631:8708" ph="INSERT INTO genre_writer... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,36 +642,217 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1527928236588" expanded="true" signature="77:759" ph="SELECT DISTI... writer" />
-            <marker date="1527928236588" expanded="true" signature="1244:1271" ph="SELECT * FRO... writer" />
-            <marker date="1527928236588" expanded="true" signature="1244:1284" ph="SELECT * FRO... writer" />
-            <marker date="1527928236588" expanded="true" signature="1244:1287" ph="SELECT * FRO... writer" />
-            <marker date="1527928236588" expanded="true" signature="1244:1288" ph="SELECT * FRO... writer" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result_of_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/Imagine/index">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/Imagine/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/common.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/add_writer.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/base.twig">
+    <entry file="file://$PROJECT_DIR$/add_writer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="63" lean-forward="true" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/fcc78d81-4b69-46c5-8751-e9c2e7bcb699.SCHEMA:literary_space">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>fcc78d81-4b69-46c5-8751-e9c2e7bcb699.SCHEMA:literary_space</OriginalElement>
+          <nodes>
+            <node x="543.5" y="548.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer_signature</node>
+            <node x="0.0" y="274.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.genre</node>
+            <node x="330.5" y="0.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.country</node>
+            <node x="805.5" y="548.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.main_writer_picture</node>
+            <node x="531.5" y="0.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.century</node>
+            <node x="297.5" y="548.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer_picture</node>
+            <node x="61.5" y="548.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.genre_writer</node>
+            <node x="420.0" y="130.0">fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer_signature" target="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer">
+              <point x="0.0" y="-52.0" />
+              <point x="664.5" y="528.0" />
+              <point x="566.875" y="528.0" />
+              <point x="29.375" y="184.0" />
+            </edge>
+            <edge source="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer" target="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.century">
+              <point x="58.75" y="-184.0" />
+              <point x="596.25" y="105.0" />
+              <point x="654.0" y="105.0" />
+              <point x="0.0" y="40.0" />
+            </edge>
+            <edge source="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer" target="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.country">
+              <point x="-58.75" y="-184.0" />
+              <point x="478.75" y="105.0" />
+              <point x="421.0" y="105.0" />
+              <point x="0.0" y="40.0" />
+            </edge>
+            <edge source="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer_picture" target="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer">
+              <point x="0.0" y="-52.0" />
+              <point x="410.5" y="528.0" />
+              <point x="508.125" y="528.0" />
+              <point x="-29.375" y="184.0" />
+            </edge>
+            <edge source="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.genre_writer" target="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer">
+              <point x="54.0" y="-52.0" />
+              <point x="223.5" y="518.0" />
+              <point x="449.375" y="518.0" />
+              <point x="-88.125" y="184.0" />
+            </edge>
+            <edge source="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.main_writer_picture" target="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer">
+              <point x="0.0" y="-52.0" />
+              <point x="939.5" y="518.0" />
+              <point x="625.625" y="518.0" />
+              <point x="88.125" y="184.0" />
+            </edge>
+            <edge source="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.genre_writer" target="fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.genre">
+              <point x="-54.0" y="-52.0" />
+              <point x="0.0" y="40.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="224.0" y="207.0" />
+          <SelectedNodes>
+            <node>fcc78d81-4b69-46c5-8751-e9c2e7bcb699.TABLE:literary_space.writer</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/js/add_writer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/template.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5454">
+          <caret line="303" column="62" lean-forward="false" selection-start-line="303" selection-start-column="62" selection-end-line="303" selection-end-column="62" />
+          <folding>
+            <marker date="1528370166662" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
+            <marker date="1528370166662" expanded="true" signature="542:581" ph="SELECT * FRO... writer" />
+            <marker date="1528370166662" expanded="true" signature="669:708" ph="SELECT * FRO... writer" />
+            <marker date="1528370166662" expanded="true" signature="796:869" ph="SELECT write... writer_signature" />
+            <marker date="1528370166662" expanded="true" signature="959:1038" ph="SELECT main_... main_writer_picture" />
+            <marker date="1528370166662" expanded="true" signature="1548:1595" ph="SELECT ${{$c... " />
+            <marker date="1528370166662" expanded="true" signature="2739:2758" ph="SELECT * FRO... genre" />
+            <marker date="1528370166662" expanded="true" signature="2821:2842" ph="SELECT * FRO... country" />
+            <marker date="1528370166662" expanded="true" signature="2905:2926" ph="SELECT * FRO... century" />
+            <marker date="1528370166662" expanded="true" signature="2988:3091" ph="SELECT * FRO... writer" />
+            <marker date="1528370166662" expanded="true" signature="3151:3198" ph="SELECT date_... writer" />
+            <marker date="1528370166662" expanded="true" signature="3284:3369" ph="UPDATE writer... " />
+            <marker date="1528370166662" expanded="true" signature="3453:3486" ph="SELECT * FRO... main_writer_picture" />
+            <marker date="1528370166662" expanded="true" signature="3576:3790" ph="SELECT DISTI... country" />
+            <marker date="1528370166662" expanded="true" signature="4021:4287" ph="SELECT DISTI... century" />
+            <marker date="1528370166662" expanded="true" signature="4603:4749" ph="SELECT name_... genre" />
+            <marker date="1528370166662" expanded="true" signature="5497:5618" ph="SELECT id_co... country" />
+            <marker date="1528370166662" expanded="true" signature="5497:5620" ph="SELECT id_co... country" />
+            <marker date="1528370166662" expanded="true" signature="5497:5634" ph="SELECT id_co... country" />
+            <marker date="1528370166662" expanded="true" signature="5497:5635" ph="SELECT id_co... country" />
+            <marker date="1528370166662" expanded="true" signature="5721:5772" ph="INSERT INTO country... " />
+            <marker date="1528370166662" expanded="true" signature="5906:6048" ph="SELECT id_ce... century" />
+            <marker date="1528370166662" expanded="true" signature="6126:6145" ph="INSERT INTO century... " />
+            <marker date="1528370166662" expanded="true" signature="6126:6181" ph="INSERT INTO century... " />
+            <marker date="1528370166662" expanded="true" signature="6345:6429" ph="INSERT INTO $... " />
+            <marker date="1528370166662" expanded="true" signature="6656:7353" ph="INSERT INTO writer... " />
+            <marker date="1528370166662" expanded="true" signature="7403:8128" ph="INSERT INTO writer... " />
+            <marker date="1528370166662" expanded="true" signature="9193:9253" ph="SELECT id_ge... genre" />
+            <marker date="1528370166662" expanded="true" signature="9303:9355" ph="INSERT INTO genre... " />
+            <marker date="1528370166662" expanded="true" signature="9500:9577" ph="INSERT INTO genre_writer... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/fill_tables.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+        <state relative-caret-position="5508">
+          <caret line="306" column="21" lean-forward="false" selection-start-line="306" selection-start-column="21" selection-end-line="306" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/create_tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -781,15 +860,7 @@
     <entry file="file://$PROJECT_DIR$/include/upload_image.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/common.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -802,18 +873,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/card.php">
+    <entry file="file://$PROJECT_DIR$/text_editor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        <state relative-caret-position="414">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result_of_search.php">
+    <entry file="file://$PROJECT_DIR$/template/blocks/scripts.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/style/scss/fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/result_of_search.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/blocks/style.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/style/scss/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1692">
+          <caret line="94" column="41" lean-forward="false" selection-start-line="94" selection-start-column="41" selection-end-line="94" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/card.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="102" column="10" lean-forward="false" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/blocks/writer_gallery.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/blocks/modal.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding>
+            <element signature="e#466#473#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/base.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <caret line="16" column="43" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="534" column="1" lean-forward="true" selection-start-line="534" selection-start-column="1" selection-end-line="534" selection-end-column="1" />
           <folding />
         </state>
       </provider>

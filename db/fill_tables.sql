@@ -1,18 +1,25 @@
 INSERT INTO writer (name, patronymic, surname, id_country, id_century, quote)
 VALUES ('Дейл', 'Бре́кенридж', 'Карнеги', 2, 6,
-        'Каждый человек хотя бы пять минут в день бывает дураком. Настоящая мудрость состоит в том, чтобы не превышать этот временной лимит.');
+        'Каждый человек хотя бы пять минут в день бывает дураком.
+         Настоящая мудрость состоит в том, чтобы не превышать этот временной лимит.');
 
 
 INSERT INTO writer (name, patronymic, surname, country, century, quote)
 VALUES ('Михаил', 'Афанасьевич', 'Булгаков', 'Россия', 20,
         'Злых людей нет на свете, есть только люди несчастливые.');
 
+DELETE FROM writer
+WHERE id_writer = 3;
 
 SELECT *
 FROM century;
 
 SELECT *
 FROM writer;
+
+SELECT writer.surname, writer.date_of_birth
+FROM writer
+ORDER BY date_of_birth;
 
 UPDATE writer
 SET
@@ -136,11 +143,37 @@ FROM writer
   INNER JOIN century ON writer.id_century = century.id_century
   INNER JOIN country ON writer.id_country = country.id_country
   INNER JOIN main_writer_picture ON writer.id_writer = main_writer_picture.id_writer
-WHERE (century.id_century = 6) AND country.id_country = 1 AND genre_writer.id_genre IN (2);
+WHERE (century.name_century = '20') AND country.name = 'Россия'
+      AND genre_writer.id_genre IN (SELECT genre.id_genre
+                                    FROM genre
+                                    WHERE genre.name_genre = 'Роман');
+
+
+SELECT
+  CONCAT(writer.name, ' ', writer.surname) AS writer_name,
+  genre.name_genre
+FROM writer
+INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
+INNER JOIN genre ON genre_writer.id_genre = genre.id_genre;
+
+SELECT * FROM writer;
+
+SET @number_month = 5;
+SELECT writer.surname
+FROM writer
+WHERE MONTH(writer.date_of_birth) = @number_month;
+
+UPDATE writer
+SET writer.quote = 'Прекрасный был денек!'
+WHERE writer.surname = 'Булгаков';
+
+DESCRIBE writer;
 
 SELECT *
 FROM main_writer_picture;
 
+SELECT *
+FROM genre;
 SELECT DISTINCT *
 FROM writer
   INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
@@ -240,3 +273,39 @@ VALUES ('Роман-эпопея'),
   ('Трагедия'),
   ('Антиутопия'),
   ('Пьеса');
+
+    SELECT *
+FROM writer;
+
+SELECT *
+FROM main_writer_picture;
+SELECT *
+FROM writer_signature;
+SELECT *
+FROM writer_picture;
+SELECT *
+FROM genre_writer;
+
+DELETE FROM main_writer_picture
+WHERE id_writer = 20;
+DELETE FROM writer_signature
+WHERE id_writer = 19;
+
+DELETE FROM writer WHERE id_writer = 4;
+
+DELETE FROM genre_writer WHERE id_writer = 4;
+DELETE FROM writer_picture WHERE id_writer = 4;
+DELETE FROM writer_signature WHERE id_writer = 4;
+DELETE FROM main_writer_picture WHERE id_writer = 4;
+
+SELECT * FROM writer;
+SELECT * FROM main_writer_picture;
+SELECT * FROM writer_signature;
+
+UPDATE writer_signature
+SET filename = NULL
+WHERE id_writer = 24;
+
+SELECT * FROM genre_writer;
+SELECT * FROM genre WHERE id_genre = 6;
+

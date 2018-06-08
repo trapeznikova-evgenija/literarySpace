@@ -38,7 +38,8 @@ CREATE TABLE IF NOT EXISTS century
 ) ENGINE=InnoDB;
 
 ALTER TABLE writer
-    ADD FOREIGN KEY (id_country) REFERENCES country (id_country);
+    ADD FOREIGN KEY (id_country) REFERENCES country (id_country)
+ON DELETE CASCADE;
 
 ALTER TABLE writer
     ADD FOREIGN KEY (id_century) REFERENCES century(id_century);
