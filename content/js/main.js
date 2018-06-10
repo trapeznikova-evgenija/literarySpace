@@ -26,7 +26,7 @@ $(function () {
     });
 
     $('.button-sign-out').on('click', function () {
-       location.href = 'index.php';
+       location.href = 'logout.php';
     });
 
 
@@ -46,7 +46,7 @@ $(function () {
 
         $.ajax({
             type: "POST",
-            url:'auth.php',
+            url:'login.php',
             data: data,
             cache: false,
             contentType: false,

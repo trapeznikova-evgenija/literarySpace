@@ -6,8 +6,8 @@ $allCountry = getAllCountry();
 $allCentury = getAllCentury();
 
 echo getView('index.twig', array(
-        'allGenre' => $allGenre,
-        'allCountry' => $allCountry,
-        'allCentury' => $allCentury
+    'allGenre' => $allGenre,
+    'allCountry' => $allCountry,
+    'allCentury' => $allCentury
 ));
 

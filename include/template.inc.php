@@ -229,7 +229,6 @@ function addFileName($columnName, $newFullName, $writerId)
 function insertDataInWriterTable($textDataArray, $countryId, $centuryId)
 {
     if ($textDataArray['dateOfDeath'] == '') {
-        echo "dateOfDeath = '' !!!!!!!!!!!!!!!!!!!!!" . PHP_EOL;
         dbQuery("
                INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
                                  quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
@@ -239,11 +238,21 @@ function insertDataInWriterTable($textDataArray, $countryId, $centuryId)
                        '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
                        '{$textDataArray['dateOfBirth']}', NULL ,
                         {$countryId}, {$centuryId})");
-    } else {
+    } elseif ($textDataArray['dateOfDeath']) {
         dbQuery("
                INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
                                  quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
                VALUES ('{$textDataArray['writerName']}', '{$textDataArray['writerPatronymic']}', 
+                       '{$textDataArray['writerSurname']}', '{$textDataArray['introductionContent']}',
+                       '{$textDataArray['content']}', '{$textDataArray['cardDescription']}',
+                       '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
+                       '{$textDataArray['dateOfBirth']}', '{$textDataArray['dateOfDeath']}',
+                        {$countryId}, {$centuryId})");
+    } elseif ($textDataArray['writerPatronymic'] == '') {
+        dbQuery("
+               INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
+                                 quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
+               VALUES ('{$textDataArray['writerName']}', NULL, 
                        '{$textDataArray['writerSurname']}', '{$textDataArray['introductionContent']}',
                        '{$textDataArray['content']}', '{$textDataArray['cardDescription']}',
                        '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
