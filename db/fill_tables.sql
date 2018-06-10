@@ -310,3 +310,13 @@ SELECT * FROM genre_writer;
 SELECT * FROM genre WHERE id_genre = 6;
 
 SELECT * FROM user WHERE user.username = 'admin';
+
+SELECT * FROM writer;
+SELECT * FROM writer_signature;
+SELECT * FROM writer_picture;
+SELECT * FROM writer_signature;
+SELECT * FROM main_writer_picture;
+SELECT * FROM genre_writer;
+
+DELETE FROM writer
+WHERE id_writer = 27;

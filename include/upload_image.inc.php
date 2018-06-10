@@ -1,7 +1,7 @@
 <?php
 function uploadImages() {
     $imagesDataArray = $_FILES;
-    $upload_path = '/var/www/html/literarySpace/content/image/writer_images/';
+    $upload_path = '/var/www/html/literary/content/image/writer_images/';
 
     foreach ($imagesDataArray as &$image) {
         if(is_uploaded_file($image['tmp_name'])) {
