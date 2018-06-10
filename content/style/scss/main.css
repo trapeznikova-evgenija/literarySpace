@@ -308,7 +308,7 @@ body {
 .label-for-input {
   padding-bottom: 7px; }
 
-.button-sign-in {
+.button-sign {
   font-size: 18px;
   padding-left: 25px;
   padding-right: 25px;
@@ -332,5 +332,11 @@ body {
 .auth-input-label {
   padding-bottom: 10px;
   font-size: 18px; }
+
+.wrong-data {
+  display: none;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #9c0303; }
 
 /*# sourceMappingURL=main.css.map */

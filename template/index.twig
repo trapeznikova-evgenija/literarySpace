@@ -99,9 +99,15 @@
             <button class="button button-search" type="submit">Найти</button>
           </form>
         </div>
-        <a href="add_writer.php">Добавить писателя</a>
+        {#<a href="add_writer.php">Добавить писателя</a>#}
       </div>
     </div>
   </main>
 {% endblock content %}
+
+{% block button %}
+  <button type="button" class="button-sign button-sign-in button-search button" data-toggle="modal" data-target="#exampleModalCenter">
+    Войти
+  </button>
+{% endblock %}
 

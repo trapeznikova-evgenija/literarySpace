@@ -8,7 +8,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="add_writer.php" method="post" class="auth-form" novalidate>
+        <form class="auth-form" novalidate>
           <div class="form-group">
             <div class="auth-input-label">Username</div>
             <input type="text" class="auth-input form-control" name="userName" placeholder="Ваш ник" required>
@@ -19,6 +19,7 @@
             <input type="password" class="auth-input form-control" name="userPassword" placeholder="Ваш пароль" required>
             <div class="invalid-feedback">Введите пароль</div>
           </div>
+          <div class="wrong-data">Неверный ник или пароль</div>
           <div class="modal-footer">
             <button id="buttonSignIn" type="submit" class="button-search button">Вход</button>
           </div>

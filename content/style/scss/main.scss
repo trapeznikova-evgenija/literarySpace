@@ -550,7 +550,7 @@ body
   padding-bottom: 7px;
 }
 
-.button-sign-in
+.button-sign
 {
   font-size: 18px;
   padding-left: 25px;
@@ -594,4 +594,12 @@ body
 {
   padding-bottom: 10px;
   font-size: 18px;
+}
+
+.wrong-data
+{
+  display: none;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #9c0303;
 }
