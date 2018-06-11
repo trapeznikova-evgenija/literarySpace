@@ -37,7 +37,8 @@ body {
   background: url("../../image/background/main_background.jpg");
   background-size: cover;
   padding-top: 95px;
-  padding-bottom: 95px; }
+  padding-bottom: 95px;
+  background-attachment: fixed; }
   .search-field-wrapper .genre-input {
     padding: 20px 0 25px;
     font-family: PlayfairDisplay-Regular; }

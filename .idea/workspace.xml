@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd9601a6-9980-4240-b416-76263bc18725" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.css" afterPath="$PROJECT_DIR$/content/style/scss/main.css" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.css.map" afterPath="$PROJECT_DIR$/content/style/scss/main.css.map" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.scss" afterPath="$PROJECT_DIR$/content/style/scss/main.scss" />
       <change beforePath="$PROJECT_DIR$/db/fill_tables.sql" afterPath="$PROJECT_DIR$/db/fill_tables.sql" />
       <change beforePath="$PROJECT_DIR$/include/template.inc.php" afterPath="$PROJECT_DIR$/include/template.inc.php" />
-      <change beforePath="$PROJECT_DIR$/include/upload_image.inc.php" afterPath="$PROJECT_DIR$/include/upload_image.inc.php" />
-      <change beforePath="$PROJECT_DIR$/result_of_search.php" afterPath="$PROJECT_DIR$/result_of_search.php" />
+      <change beforePath="$PROJECT_DIR$/template/add_writer.twig" afterPath="$PROJECT_DIR$/template/add_writer.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +42,8 @@
       <file leaf-file-name="add_writer.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            <state relative-caret-position="612">
+              <caret line="64" column="64" lean-forward="false" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -49,8 +52,8 @@
       <file leaf-file-name="fill_tables.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/fill_tables.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="313" column="21" lean-forward="false" selection-start-line="313" selection-start-column="21" selection-end-line="313" selection-end-column="21" />
+            <state relative-caret-position="257">
+              <caret line="342" column="21" lean-forward="false" selection-start-line="342" selection-start-column="21" selection-end-line="342" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -59,8 +62,8 @@
       <file leaf-file-name="parse_writer_data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parse_writer_data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+            <state relative-caret-position="72">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -69,7 +72,7 @@
       <file leaf-file-name="add_writer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/js/add_writer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="56">
               <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding />
             </state>
@@ -99,42 +102,60 @@
       <file leaf-file-name="template.inc.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/template.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="259" column="42" lean-forward="true" selection-start-line="259" selection-start-column="42" selection-end-line="259" selection-end-column="42" />
+            <state relative-caret-position="74">
+              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
-                <marker date="1528664261465" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
-                <marker date="1528664261465" expanded="true" signature="542:581" ph="SELECT * FRO... writer" />
-                <marker date="1528664261465" expanded="true" signature="669:708" ph="SELECT * FRO... writer" />
-                <marker date="1528664261465" expanded="true" signature="796:869" ph="SELECT write... writer_signature" />
-                <marker date="1528664261465" expanded="true" signature="959:1038" ph="SELECT main_... main_writer_picture" />
-                <marker date="1528664261465" expanded="true" signature="1548:1595" ph="SELECT ${{$c... " />
-                <marker date="1528664261465" expanded="true" signature="2739:2758" ph="SELECT * FRO... genre" />
-                <marker date="1528664261465" expanded="true" signature="2821:2842" ph="SELECT * FRO... country" />
-                <marker date="1528664261465" expanded="true" signature="2905:2926" ph="SELECT * FRO... century" />
-                <marker date="1528664261465" expanded="true" signature="2988:3091" ph="SELECT * FRO... writer" />
-                <marker date="1528664261465" expanded="true" signature="3151:3198" ph="SELECT date_... writer" />
-                <marker date="1528664261465" expanded="true" signature="3284:3369" ph="UPDATE writer... " />
-                <marker date="1528664261465" expanded="true" signature="3453:3486" ph="SELECT * FRO... main_writer_picture" />
-                <marker date="1528664261465" expanded="true" signature="3576:3790" ph="SELECT DISTI... country" />
-                <marker date="1528664261465" expanded="true" signature="4021:4287" ph="SELECT DISTI... century" />
-                <marker date="1528664261465" expanded="true" signature="4603:4749" ph="SELECT name_... genre" />
-                <marker date="1528664261465" expanded="true" signature="5497:5618" ph="SELECT id_co... country" />
-                <marker date="1528664261465" expanded="true" signature="5497:5620" ph="SELECT id_co... country" />
-                <marker date="1528664261465" expanded="true" signature="5497:5634" ph="SELECT id_co... country" />
-                <marker date="1528664261465" expanded="true" signature="5497:5635" ph="SELECT id_co... country" />
-                <marker date="1528664261465" expanded="true" signature="5721:5772" ph="INSERT INTO country... " />
-                <marker date="1528664261465" expanded="true" signature="5906:6048" ph="SELECT id_ce... century" />
-                <marker date="1528664261465" expanded="true" signature="6126:6145" ph="INSERT INTO century... " />
-                <marker date="1528664261465" expanded="true" signature="6126:6181" ph="INSERT INTO century... " />
-                <marker date="1528664261465" expanded="true" signature="6345:6429" ph="INSERT INTO $... " />
-                <marker date="1528664261465" expanded="true" signature="6771:7454" ph="INSERT INTO writer... " />
-                <marker date="1528664261465" expanded="true" signature="7486:7744" ph="INSERT INTO writer... " />
-                <marker date="1528664261465" expanded="true" signature="7486:8169" ph="INSERT INTO writer... " />
-                <marker date="1528664261465" expanded="true" signature="8334:8346" ph="INSERT INTO $... " />
-                <marker date="1528664261465" expanded="true" signature="9576:9636" ph="SELECT id_ge... genre" />
-                <marker date="1528664261465" expanded="true" signature="9686:9738" ph="INSERT INTO genre... " />
-                <marker date="1528664261465" expanded="true" signature="9883:9960" ph="INSERT INTO genre_writer... " />
+                <marker date="1528722956829" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
+                <marker date="1528722956829" expanded="true" signature="542:581" ph="SELECT * FRO... writer" />
+                <marker date="1528722956829" expanded="true" signature="669:708" ph="SELECT * FRO... writer" />
+                <marker date="1528722956829" expanded="true" signature="796:869" ph="SELECT write... writer_signature" />
+                <marker date="1528722956829" expanded="true" signature="959:1038" ph="SELECT main_... main_writer_picture" />
+                <marker date="1528722956829" expanded="true" signature="1548:1595" ph="SELECT ${{$c... " />
+                <marker date="1528722956829" expanded="true" signature="2739:2798" ph="SELECT * FRO... genre" />
+                <marker date="1528722956829" expanded="true" signature="2739:2864" ph="SELECT DISTI... genre" />
+                <marker date="1528722956829" expanded="true" signature="2927:2948" ph="SELECT * FRO... country" />
+                <marker date="1528722956829" expanded="true" signature="3011:3032" ph="SELECT * FRO... century" />
+                <marker date="1528722956829" expanded="true" signature="3094:3197" ph="SELECT * FRO... writer" />
+                <marker date="1528722956829" expanded="true" signature="3257:3304" ph="SELECT date_... writer" />
+                <marker date="1528722956829" expanded="true" signature="3390:3475" ph="UPDATE writer... " />
+                <marker date="1528722956829" expanded="true" signature="3559:3592" ph="SELECT * FRO... main_writer_picture" />
+                <marker date="1528722956829" expanded="true" signature="3682:3896" ph="SELECT DISTI... country" />
+                <marker date="1528722956829" expanded="true" signature="4127:4393" ph="SELECT DISTI... century" />
+                <marker date="1528722956829" expanded="true" signature="4709:4855" ph="SELECT name_... genre" />
+                <marker date="1528722956829" expanded="true" signature="5603:5724" ph="SELECT id_co... country" />
+                <marker date="1528722956829" expanded="true" signature="5603:5726" ph="SELECT id_co... country" />
+                <marker date="1528722956829" expanded="true" signature="5603:5740" ph="SELECT id_co... country" />
+                <marker date="1528722956829" expanded="true" signature="5603:5741" ph="SELECT id_co... country" />
+                <marker date="1528722956829" expanded="true" signature="5827:5878" ph="INSERT INTO country... " />
+                <marker date="1528722956829" expanded="true" signature="6012:6154" ph="SELECT id_ce... century" />
+                <marker date="1528722956829" expanded="true" signature="6232:6251" ph="INSERT INTO century... " />
+                <marker date="1528722956829" expanded="true" signature="6232:6287" ph="INSERT INTO century... " />
+                <marker date="1528722956829" expanded="true" signature="6451:6535" ph="INSERT INTO $... " />
+                <marker date="1528722956829" expanded="true" signature="6871:6883" ph="INSERT INTO $... " />
+                <marker date="1528722956829" expanded="true" signature="8344:8404" ph="SELECT id_ge... genre" />
+                <marker date="1528722956829" expanded="true" signature="8454:8506" ph="INSERT INTO genre... " />
+                <marker date="1528722956829" expanded="true" signature="8683:8760" ph="INSERT INTO genre_writer... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -164,8 +185,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>card</find>
-      <find>box</find>
       <find>head</find>
       <find>main-in</find>
       <find>main-img</find>
@@ -194,6 +213,8 @@
       <find>main</find>
       <find>writer-filt</find>
       <find>genre-in</find>
+      <find>.search-field-wrapper</find>
+      <find>genre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,7 +256,6 @@
         <option value="$PROJECT_DIR$/template/blocks/modal.twig" />
         <option value="$PROJECT_DIR$/include/auth.inc.php" />
         <option value="$PROJECT_DIR$/template/base.twig" />
-        <option value="$PROJECT_DIR$/content/style/scss/main.scss" />
         <option value="$PROJECT_DIR$/template/index.twig" />
         <option value="$PROJECT_DIR$/auth.php" />
         <option value="$PROJECT_DIR$/include/user.inc" />
@@ -247,10 +267,11 @@
         <option value="$PROJECT_DIR$/include/user.inc.php" />
         <option value="$PROJECT_DIR$/include/session.inc.php" />
         <option value="$PROJECT_DIR$/add_writer.php" />
-        <option value="$PROJECT_DIR$/template/add_writer.twig" />
         <option value="$PROJECT_DIR$/text_editor.html" />
         <option value="$PROJECT_DIR$/include/upload_image.inc.php" />
         <option value="$PROJECT_DIR$/result_of_search.php" />
+        <option value="$PROJECT_DIR$/template/add_writer.twig" />
+        <option value="$PROJECT_DIR$/content/style/scss/main.scss" />
         <option value="$PROJECT_DIR$/db/fill_tables.sql" />
         <option value="$PROJECT_DIR$/include/template.inc.php" />
       </list>
@@ -479,22 +500,24 @@
       <workItem from="1528456312083" duration="34345000" />
       <workItem from="1528494854290" duration="249000" />
       <workItem from="1528612335122" duration="36916000" />
+      <workItem from="1528699297089" duration="6947000" />
+      <workItem from="1528711794537" duration="7945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437690000" />
+    <option name="totallyTimeSpent" value="452582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="47" width="1602" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15523933" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32470894" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.144375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0925" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.176875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36351874" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -692,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,7 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,15 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="553" column="1" lean-forward="false" selection-start-line="553" selection-start-column="1" selection-end-line="553" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,23 +785,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/user.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="true" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/user.inc" />
     <entry file="file://$PROJECT_DIR$/db/create_tables.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="47" column="12" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
           <caret line="104" column="9" lean-forward="false" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -820,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,15 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -883,23 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_writer_data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,9 +885,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/filter.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1527928236588" expanded="true" signature="77:759" ph="SELECT DISTI... writer" />
+            <marker date="1527928236588" expanded="true" signature="1244:1287" ph="SELECT * FRO... writer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="64" column="64" lean-forward="false" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parse_writer_data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/fill_tables.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="342" column="21" lean-forward="false" selection-start-line="342" selection-start-column="21" selection-end-line="342" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/js/add_writer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="56">
           <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
@@ -935,62 +952,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/filter.inc.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1527928236588" expanded="true" signature="77:759" ph="SELECT DISTI... writer" />
-            <marker date="1527928236588" expanded="true" signature="1244:1287" ph="SELECT * FRO... writer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/fill_tables.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="313" column="21" lean-forward="false" selection-start-line="313" selection-start-column="21" selection-end-line="313" selection-end-column="21" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/template.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="259" column="42" lean-forward="true" selection-start-line="259" selection-start-column="42" selection-end-line="259" selection-end-column="42" />
+        <state relative-caret-position="74">
+          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
-            <marker date="1528664261465" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
-            <marker date="1528664261465" expanded="true" signature="542:581" ph="SELECT * FRO... writer" />
-            <marker date="1528664261465" expanded="true" signature="669:708" ph="SELECT * FRO... writer" />
-            <marker date="1528664261465" expanded="true" signature="796:869" ph="SELECT write... writer_signature" />
-            <marker date="1528664261465" expanded="true" signature="959:1038" ph="SELECT main_... main_writer_picture" />
-            <marker date="1528664261465" expanded="true" signature="1548:1595" ph="SELECT ${{$c... " />
-            <marker date="1528664261465" expanded="true" signature="2739:2758" ph="SELECT * FRO... genre" />
-            <marker date="1528664261465" expanded="true" signature="2821:2842" ph="SELECT * FRO... country" />
-            <marker date="1528664261465" expanded="true" signature="2905:2926" ph="SELECT * FRO... century" />
-            <marker date="1528664261465" expanded="true" signature="2988:3091" ph="SELECT * FRO... writer" />
-            <marker date="1528664261465" expanded="true" signature="3151:3198" ph="SELECT date_... writer" />
-            <marker date="1528664261465" expanded="true" signature="3284:3369" ph="UPDATE writer... " />
-            <marker date="1528664261465" expanded="true" signature="3453:3486" ph="SELECT * FRO... main_writer_picture" />
-            <marker date="1528664261465" expanded="true" signature="3576:3790" ph="SELECT DISTI... country" />
-            <marker date="1528664261465" expanded="true" signature="4021:4287" ph="SELECT DISTI... century" />
-            <marker date="1528664261465" expanded="true" signature="4603:4749" ph="SELECT name_... genre" />
-            <marker date="1528664261465" expanded="true" signature="5497:5618" ph="SELECT id_co... country" />
-            <marker date="1528664261465" expanded="true" signature="5497:5620" ph="SELECT id_co... country" />
-            <marker date="1528664261465" expanded="true" signature="5497:5634" ph="SELECT id_co... country" />
-            <marker date="1528664261465" expanded="true" signature="5497:5635" ph="SELECT id_co... country" />
-            <marker date="1528664261465" expanded="true" signature="5721:5772" ph="INSERT INTO country... " />
-            <marker date="1528664261465" expanded="true" signature="5906:6048" ph="SELECT id_ce... century" />
-            <marker date="1528664261465" expanded="true" signature="6126:6145" ph="INSERT INTO century... " />
-            <marker date="1528664261465" expanded="true" signature="6126:6181" ph="INSERT INTO century... " />
-            <marker date="1528664261465" expanded="true" signature="6345:6429" ph="INSERT INTO $... " />
-            <marker date="1528664261465" expanded="true" signature="6771:7454" ph="INSERT INTO writer... " />
-            <marker date="1528664261465" expanded="true" signature="7486:7744" ph="INSERT INTO writer... " />
-            <marker date="1528664261465" expanded="true" signature="7486:8169" ph="INSERT INTO writer... " />
-            <marker date="1528664261465" expanded="true" signature="8334:8346" ph="INSERT INTO $... " />
-            <marker date="1528664261465" expanded="true" signature="9576:9636" ph="SELECT id_ge... genre" />
-            <marker date="1528664261465" expanded="true" signature="9686:9738" ph="INSERT INTO genre... " />
-            <marker date="1528664261465" expanded="true" signature="9883:9960" ph="INSERT INTO genre_writer... " />
+            <marker date="1528722956829" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
+            <marker date="1528722956829" expanded="true" signature="542:581" ph="SELECT * FRO... writer" />
+            <marker date="1528722956829" expanded="true" signature="669:708" ph="SELECT * FRO... writer" />
+            <marker date="1528722956829" expanded="true" signature="796:869" ph="SELECT write... writer_signature" />
+            <marker date="1528722956829" expanded="true" signature="959:1038" ph="SELECT main_... main_writer_picture" />
+            <marker date="1528722956829" expanded="true" signature="1548:1595" ph="SELECT ${{$c... " />
+            <marker date="1528722956829" expanded="true" signature="2739:2798" ph="SELECT * FRO... genre" />
+            <marker date="1528722956829" expanded="true" signature="2739:2864" ph="SELECT DISTI... genre" />
+            <marker date="1528722956829" expanded="true" signature="2927:2948" ph="SELECT * FRO... country" />
+            <marker date="1528722956829" expanded="true" signature="3011:3032" ph="SELECT * FRO... century" />
+            <marker date="1528722956829" expanded="true" signature="3094:3197" ph="SELECT * FRO... writer" />
+            <marker date="1528722956829" expanded="true" signature="3257:3304" ph="SELECT date_... writer" />
+            <marker date="1528722956829" expanded="true" signature="3390:3475" ph="UPDATE writer... " />
+            <marker date="1528722956829" expanded="true" signature="3559:3592" ph="SELECT * FRO... main_writer_picture" />
+            <marker date="1528722956829" expanded="true" signature="3682:3896" ph="SELECT DISTI... country" />
+            <marker date="1528722956829" expanded="true" signature="4127:4393" ph="SELECT DISTI... century" />
+            <marker date="1528722956829" expanded="true" signature="4709:4855" ph="SELECT name_... genre" />
+            <marker date="1528722956829" expanded="true" signature="5603:5724" ph="SELECT id_co... country" />
+            <marker date="1528722956829" expanded="true" signature="5603:5726" ph="SELECT id_co... country" />
+            <marker date="1528722956829" expanded="true" signature="5603:5740" ph="SELECT id_co... country" />
+            <marker date="1528722956829" expanded="true" signature="5603:5741" ph="SELECT id_co... country" />
+            <marker date="1528722956829" expanded="true" signature="5827:5878" ph="INSERT INTO country... " />
+            <marker date="1528722956829" expanded="true" signature="6012:6154" ph="SELECT id_ce... century" />
+            <marker date="1528722956829" expanded="true" signature="6232:6251" ph="INSERT INTO century... " />
+            <marker date="1528722956829" expanded="true" signature="6232:6287" ph="INSERT INTO century... " />
+            <marker date="1528722956829" expanded="true" signature="6451:6535" ph="INSERT INTO $... " />
+            <marker date="1528722956829" expanded="true" signature="6871:6883" ph="INSERT INTO $... " />
+            <marker date="1528722956829" expanded="true" signature="8344:8404" ph="SELECT id_ge... genre" />
+            <marker date="1528722956829" expanded="true" signature="8454:8506" ph="INSERT INTO genre... " />
+            <marker date="1528722956829" expanded="true" signature="8683:8760" ph="INSERT INTO genre_writer... " />
           </folding>
         </state>
       </provider>

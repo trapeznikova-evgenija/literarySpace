@@ -99,7 +99,7 @@ function getFirstElement($array)
 
 function getAllGenre()
 {
-    return dbQueryGetResult("SELECT * FROM genre");
+    return dbQueryGetResult("SELECT DISTINCT genre.name_genre, genre.id_genre FROM genre INNER JOIN genre_writer ON genre.id_genre = genre_writer.id_genre");
 }
 
 function getAllCountry()
@@ -226,47 +226,31 @@ function addFileName($columnName, $newFullName, $writerId)
     dbQuery("INSERT INTO {$columnName}(id_writer, filename) VALUE ({$writerId}, '{$newFullName}')");
 }
 
-function insertDataInWriterTable($textDataArray, $countryId, $centuryId)
+function insertDataInWriterTable($queryString)
 {
-    $writerPatronymic = $textDataArray['writerPatronymic'] ?? NULL;
-    $dateOfDeath = $textDataArray['dateOfDeath'] ?? NULL;
-
-    echo 'writerPatronymic' . $writerPatronymic;
-    echo 'dateOfDeath ' . $dateOfDeath;
-
-    var_dump($textDataArray);
-    echo "   INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
-                                 quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
-               VALUES ('{$textDataArray['writerName']}', $writerPatronymic, 
-                       '{$textDataArray['writerSurname']}', '{$textDataArray['introductionContent']}',
-                       '{$textDataArray['content']}', '{$textDataArray['cardDescription']}',
-                       '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
-                       '{$textDataArray['dateOfBirth']}', $dateOfDeath,
-                        {$countryId}, {$centuryId})";
-    dbQuery("
-               INSERT INTO writer(name, patronymic, surname, intoduction_content, content, card_description,
-                                 quote, famous_book, date_of_birth, date_of_death, id_country, id_century)
-               VALUES ('{$textDataArray['writerName']}', $writerPatronymic, 
-                       '{$textDataArray['writerSurname']}', '{$textDataArray['introductionContent']}',
-                       '{$textDataArray['content']}', '{$textDataArray['cardDescription']}',
-                       '{$textDataArray['quote']}', '{$textDataArray['famousBook']}',
-                       '{$textDataArray['dateOfBirth']}', $dateOfDeath,
-                        {$countryId}, {$centuryId})");
-
+    dbQuery("{$queryString}");
 }
 
-function renderInsertQuery($tableName, $parameters, $countryId, $centuryId)
+function renderInsertQuery($tableName, &$parameters, $countryId, $centuryId)
 {
+    $parameters['id_country'] = $countryId;
+    $parameters['id_century'] = $centuryId;
     $keys = implode(', ', array_keys($parameters));
     $begin = implode('', ["INSERT INTO {$tableName}", '(', $keys, ') ', 'VALUES']);
+    foreach ($parameters as $key => $value) {
+        if ($key != 'id_century' && $key != 'id_country') {
+            $parameters[$key] = "'{$value}'";
+        }
+    }
     $values = implode(', ', array_values($parameters));
-    $query = implode('', [$begin, '(', $values, ')']);
+    $query = "{$begin} ( {$values} )"; //implode('', [$begin, '(', $values, ')']); //
+    echo 'QUERY ' . $query . PHP_EOL;
     return $query;
 }
 
 function getCountryId($textDataArray)
 {
-    $countryName = $textDataArray['writerCountry'];
+    $countryName = $textDataArray['id_country'];
     $countryId = getCountryIdFromName($countryName);
     if (!$countryId) {
         $countryId = addNewCountry($countryName);
@@ -277,7 +261,7 @@ function getCountryId($textDataArray)
 
 function getCenturyId($textDataArray)
 {
-    $century = $textDataArray['writerCentury'];
+    $century = $textDataArray['id_century'];
     $centuryId = getCenturyIdFromName($century);
     if (!$centuryId) {
         $centuryId = addNewCentury($century);
@@ -307,6 +291,7 @@ function insertDataInGenreWriterTable($genresArray, $writerId)
         if (!$genreId) {
             dbQuery("INSERT INTO genre(name_genre) VALUE ('{$genreName}')");
             $genreId = dbQueryGetResult("SELECT LAST_INSERT_ID()");
+            echo 'genre added';
         }
         $genreId = getFirstElement($genreId);
         dbQuery("INSERT INTO genre_writer(id_writer, id_genre) VALUE ({$writerId}, {$genreId})");
@@ -316,13 +301,11 @@ function insertDataInGenreWriterTable($genresArray, $writerId)
 function insertFilenameInImagesTable($imagesDataArray, $writerId)
 {
     if ($imagesDataArray['writerSignature'] == '') {
-        echo '!!!';
         addFileName('writer_signature', NULL, $writerId);
     }
     foreach ($imagesDataArray as $key => $value) {
         $newFullName = $value['tmp_name'];
         if ($key === 'mainWriterPhoto') {
-            echo 'mainWriterPhoto ' . $newFullName . PHP_EOL;
             addFileName('main_writer_picture', $newFullName, $writerId);
         } elseif ($key === 'writerSignature') {
             addFileName('writer_signature', $newFullName, $writerId);
@@ -332,11 +315,11 @@ function insertFilenameInImagesTable($imagesDataArray, $writerId)
     }
 }
 
-function replaceOnNull(&$textDataArray)
+function removeEmptyArrayElements(&$textDataArray)
 {
-    foreach ($textDataArray as $value) {
-        if ($value == '') {
-            $value = NULL;
+    foreach ($textDataArray as $key => $value) {
+        if ($value == '' || $key == 'writerGenres') {
+            unset($textDataArray[$key]);
         }
     }
 }
@@ -351,19 +334,21 @@ function addNewWriterToDb($textDataArray, $imagesDataArray)
     echo PHP_EOL;
 
     echo 'Перед insertDataInWriterTable' . PHP_EOL;
-    replaceOnNull($textDataArray);
-//    insertDataInWriterTable($textDataArray, $countryId, $centuryId);
-    renderInsertQuery('writer', $textDataArray, $countryId, $centuryId);
-
     $genresArray = getGenresArray($textDataArray);
+    removeEmptyArrayElements($textDataArray);
+    $query = renderInsertQuery('writer', $textDataArray, $countryId, $centuryId);
+    insertDataInWriterTable($query);
+
+
     echo 'genresArray ' . PHP_EOL;
     print_r($genresArray);
     $writerId = getLastInsertId();
     echo "LAST INSERT ID {$writerId}";
-
-    addYearsOfLifeString($writerId);
-    insertDataInGenreWriterTable($genresArray, $writerId);
-    insertFilenameInImagesTable($imagesDataArray, $writerId);
+    if ($writerId) {
+        addYearsOfLifeString($writerId);
+        insertDataInGenreWriterTable($genresArray, $writerId);
+        insertFilenameInImagesTable($imagesDataArray, $writerId);
+    }
 }
 
 function addYearsOfLifeString($writerId)

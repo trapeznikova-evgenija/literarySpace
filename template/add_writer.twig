@@ -5,29 +5,29 @@
     <form class="needs-validation add_writer_form" enctype="multipart/form-data" novalidate>
       <div class="form-group writer-name input-field-wrapper">
         <div class="label-for-input">Имя</div>
-        <input class="form-control" name="writerName" placeholder="Федор" type="text" required>
+        <input class="form-control" name="name" placeholder="Федор" type="text" required>
         <div class="invalid-feedback">Заполните это поле</div>
       </div>
       <div class="form-group writer-name input-field-wrapper">
         <div class="label-for-input">Отчество</div>
-        <input class="form-control" name="writerPatronymic" placeholder="Михайлович" type="text">
+        <input class="form-control" name="patronymic" placeholder="Михайлович" type="text">
         <div class="invalid-feedback">Заполните это поле</div>
       </div>
       <div class="form-group writer-name input-field-wrapper">
         <div class="label-for-input">Фамилия</div>
-        <input class="form-control" name="writerSurname" placeholder="Достоевский" type="text" required>
+        <input class="form-control" name="surname" placeholder="Достоевский" type="text" required>
         <div class="invalid-feedback">Заполните это поле</div>
       </div>
       <div class="clear"></div>
       <div class="form-group input-field-wrapper">
         <div class="writer-filter-parameter">
           <div class="label-for-input">Страна</div>
-          <input class="form-control" placeholder="Россия" name="writerCountry" required>
+          <input class="form-control" placeholder="Россия" name="id_country" required>
           <div class="invalid-feedback">Заполните это поле</div>
         </div>
         <div class="writer-filter-parameter">
           <div class="label-for-input">Век</div>
-          <input class="form-control" placeholder="20" name="writerCentury" required>
+          <input class="form-control" placeholder="20" name="id_century" required>
           <div class="invalid-feedback">Заполните это поле</div>
         </div>
         <div class="writer-filter-parameter">
@@ -40,24 +40,24 @@
       <div class="form-group input-field-wrapper">
         <div class="date-of-birth-input">
           <div class="label-for-input">Дата рождения</div>
-          <input class="form-control" name="dateOfBirth" type="text" placeholder="гггг-мм-дд" required>
+          <input class="form-control" name="date_of_birth" type="text" placeholder="гггг-мм-дд" required>
           <div class="invalid-feedback">Заполните это поле</div>
         </div>
         <div class="date-of-death-input">
           <div class="label-for-input">Дата смерти</div>
-          <input class="form-control" name="dateOfDeath" type="text" placeholder="гггг-мм-дд">
+          <input class="form-control" name="date_of_death" type="text" placeholder="гггг-мм-дд">
           <div class="invalid-feedback">Заполните это поле</div>
         </div>
         <div class="clear"></div>
       </div>
       <div class="form-group input-field-wrapper">
         <div class="label-for-input">Описание для карточки писателя</div>
-        <textarea class="form-control" name="cardDescription" required></textarea>
+        <textarea class="form-control" name="card_description" required></textarea>
         <div class="invalid-feedback">Заполните это поле</div>
       </div>
       <div class="form-group input-field-wrapper">
         <div class="label-for-input">Известные книги писателя</div>
-        <textarea class="form-control" name="famousBook" required></textarea>
+        <textarea class="form-control" name="famous_book" required></textarea>
         <div class="invalid-feedback">Заполните это поле</div>
       </div>
       <div class="form-group input-field-wrapper">
@@ -67,7 +67,7 @@
       </div>
       <div class="form-group input-field-wrapper">
         <div class="label-for-input">Описание писателя</div>
-        <textarea class="form-control" rows="2" name="introductionContent" required></textarea>
+        <textarea class="form-control" rows="2" name="intoduction_content" required></textarea>
         <div class="invalid-feedback">Заполните это поле</div>
       </div>
       <div class="form-group input-field-wrapper">

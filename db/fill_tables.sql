@@ -17,7 +17,9 @@ FROM century;
 SELECT *
 FROM writer;
 
-SELECT writer.surname, writer.date_of_birth
+SELECT
+  writer.surname,
+  writer.date_of_birth
 FROM writer
 ORDER BY date_of_birth;
 
@@ -153,10 +155,11 @@ SELECT
   CONCAT(writer.name, ' ', writer.surname) AS writer_name,
   genre.name_genre
 FROM writer
-INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
-INNER JOIN genre ON genre_writer.id_genre = genre.id_genre;
+  INNER JOIN genre_writer ON writer.id_writer = genre_writer.id_writer
+  INNER JOIN genre ON genre_writer.id_genre = genre.id_genre;
 
-SELECT * FROM writer;
+SELECT *
+FROM writer;
 
 SET @number_month = 5;
 SELECT writer.surname
@@ -274,7 +277,7 @@ VALUES ('Роман-эпопея'),
   ('Антиутопия'),
   ('Пьеса');
 
-    SELECT *
+SELECT *
 FROM writer;
 
 SELECT *
@@ -291,32 +294,57 @@ WHERE id_writer = 20;
 DELETE FROM writer_signature
 WHERE id_writer = 19;
 
-DELETE FROM writer WHERE id_writer = 4;
+DELETE FROM writer
+WHERE id_writer = 4;
 
-DELETE FROM genre_writer WHERE id_writer = 4;
-DELETE FROM writer_picture WHERE id_writer = 4;
-DELETE FROM writer_signature WHERE id_writer = 4;
-DELETE FROM main_writer_picture WHERE id_writer = 4;
+DELETE FROM genre_writer
+WHERE id_writer = 4;
+DELETE FROM writer_picture
+WHERE id_writer = 4;
+DELETE FROM writer_signature
+WHERE id_writer = 4;
+DELETE FROM main_writer_picture
+WHERE id_writer = 4;
 
-SELECT * FROM writer;
-SELECT * FROM main_writer_picture;
-SELECT * FROM writer_signature;
+SELECT *
+FROM writer;
+SELECT *
+FROM main_writer_picture;
+SELECT *
+FROM writer_signature;
 
 UPDATE writer_signature
 SET filename = NULL
 WHERE id_writer = 24;
 
-SELECT * FROM genre_writer;
-SELECT * FROM genre WHERE id_genre = 6;
+SELECT *
+FROM genre_writer;
+SELECT *
+FROM genre
+WHERE id_genre = 6;
 
-SELECT * FROM user WHERE user.username = 'admin';
+SELECT *
+FROM user
+WHERE user.username = 'admin';
+
+SELECT *
+FROM writer;
+SELECT *
+FROM writer_signature;
+SELECT *
+FROM writer_picture;
+SELECT *
+FROM writer_signature;
+SELECT *
+FROM main_writer_picture;
+SELECT * FROM century;
+SELECT * FROM country;
 
 SELECT * FROM writer;
-SELECT * FROM writer_signature;
-SELECT * FROM writer_picture;
-SELECT * FROM writer_signature;
-SELECT * FROM main_writer_picture;
-SELECT * FROM genre_writer;
+
+DELETE FROM century
+WHERE id_century = 9;
 
 DELETE FROM writer
-WHERE id_writer = 27;
+WHERE id_writer = 32;
+
