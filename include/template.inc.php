@@ -328,17 +328,12 @@ function addNewWriterToDb($textDataArray, $imagesDataArray)
 {
     $countryId = getCountryId($textDataArray);
     $centuryId = getCenturyId($textDataArray);
-    echo "in function addNewWriterToDB()" . PHP_EOL;
-    print_r($textDataArray);
-    print_r($imagesDataArray);
-    echo PHP_EOL;
 
     echo 'Перед insertDataInWriterTable' . PHP_EOL;
     $genresArray = getGenresArray($textDataArray);
     removeEmptyArrayElements($textDataArray);
     $query = renderInsertQuery('writer', $textDataArray, $countryId, $centuryId);
     insertDataInWriterTable($query);
-
 
     echo 'genresArray ' . PHP_EOL;
     print_r($genresArray);
