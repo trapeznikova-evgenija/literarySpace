@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dd9601a6-9980-4240-b416-76263bc18725" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/db/fill_tables.sql" afterPath="$PROJECT_DIR$/db/fill_tables.sql" />
-      <change beforePath="$PROJECT_DIR$/include/template.inc.php" afterPath="$PROJECT_DIR$/include/template.inc.php" />
+      <change beforePath="$PROJECT_DIR$/content/js/main.js" afterPath="$PROJECT_DIR$/content/js/main.js" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.css" afterPath="$PROJECT_DIR$/content/style/scss/main.css" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.css.map" afterPath="$PROJECT_DIR$/content/style/scss/main.css.map" />
+      <change beforePath="$PROJECT_DIR$/content/style/scss/main.scss" afterPath="$PROJECT_DIR$/content/style/scss/main.scss" />
+      <change beforePath="$PROJECT_DIR$/template/blocks/writer_gallery.twig" afterPath="$PROJECT_DIR$/template/blocks/writer_gallery.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +51,8 @@
       <file leaf-file-name="fill_tables.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/fill_tables.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="18">
+              <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -68,7 +71,7 @@
       <file leaf-file-name="add_writer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/js/add_writer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="434">
               <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding />
             </state>
@@ -95,10 +98,30 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="writer_gallery.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/blocks/writer_gallery.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="template.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/template.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4914">
+            <state relative-caret-position="18">
               <caret line="273" column="1" lean-forward="false" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
               <folding>
                 <marker date="1528730758434" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
@@ -136,35 +159,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+            <state relative-caret-position="355">
+              <caret line="130" column="11" lean-forward="false" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filter.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/filter.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <marker date="1527928236588" expanded="true" signature="77:759" ph="SELECT DISTI... writer" />
-                <marker date="1527928236588" expanded="true" signature="1244:1287" ph="SELECT * FRO... writer" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>head</find>
       <find>main-in</find>
       <find>main-img</find>
       <find>years</find>
@@ -211,6 +210,7 @@
       <find>genre-in</find>
       <find>.search-field-wrapper</find>
       <find>genre</find>
+      <find>grid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -235,7 +235,6 @@
         <option value="$PROJECT_DIR$/include/request.inc.php" />
         <option value="$PROJECT_DIR$/template/add_writer.html" />
         <option value="$PROJECT_DIR$/include/add_writer.inc.php" />
-        <option value="$PROJECT_DIR$/template/blocks/writer_gallery.twig" />
         <option value="$PROJECT_DIR$/parseWriterData.php" />
         <option value="$PROJECT_DIR$/include/common.inc.php" />
         <option value="$PROJECT_DIR$/card.php" />
@@ -255,7 +254,6 @@
         <option value="$PROJECT_DIR$/template/index.twig" />
         <option value="$PROJECT_DIR$/auth.php" />
         <option value="$PROJECT_DIR$/include/user.inc" />
-        <option value="$PROJECT_DIR$/content/js/main.js" />
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/include/secuire.inc.php" />
@@ -267,9 +265,11 @@
         <option value="$PROJECT_DIR$/include/upload_image.inc.php" />
         <option value="$PROJECT_DIR$/result_of_search.php" />
         <option value="$PROJECT_DIR$/template/add_writer.twig" />
-        <option value="$PROJECT_DIR$/content/style/scss/main.scss" />
         <option value="$PROJECT_DIR$/include/template.inc.php" />
         <option value="$PROJECT_DIR$/db/fill_tables.sql" />
+        <option value="$PROJECT_DIR$/content/style/scss/main.scss" />
+        <option value="$PROJECT_DIR$/content/js/main.js" />
+        <option value="$PROJECT_DIR$/template/blocks/writer_gallery.twig" />
       </list>
     </option>
   </component>
@@ -294,7 +294,7 @@
       <path value="$PROJECT_DIR$" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="50" />
     <option name="y" value="47" />
     <option name="width" value="1396" />
@@ -500,17 +500,18 @@
       <workItem from="1528711794537" duration="7945000" />
       <workItem from="1528729840258" duration="918000" />
       <workItem from="1528751205236" duration="2017000" />
-      <workItem from="1528753611554" duration="11000" />
+      <workItem from="1528753611554" duration="2250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455528000" />
+    <option name="totallyTimeSpent" value="457767000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
+    <frame x="0" y="-4" width="1600" height="904" extended-state="7" />
     <editor active="true" />
     <layout>
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32470894" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.144375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -526,7 +527,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32470894" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858992" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -759,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/blocks/writer_gallery.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/blocks/modal.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -814,13 +807,6 @@
             <marker date="1528620830939" expanded="true" signature="304:369" ph="SELECT * FRO... user" />
             <marker date="1528620830939" expanded="true" signature="304:370" ph="SELECT user.... user" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -885,10 +871,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="70" column="25" lean-forward="false" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="64" lean-forward="false" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/js/add_writer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -901,14 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_writer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result_of_search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -917,17 +911,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/add_writer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="36">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/style/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="130" column="11" lean-forward="false" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/template.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4914">
+        <state relative-caret-position="18">
           <caret line="273" column="1" lean-forward="false" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
           <folding>
             <marker date="1528730758434" expanded="true" signature="268:460" ph="SELECT write... writer_picture" />
@@ -964,26 +974,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/add_writer.twig">
+    <entry file="file://$PROJECT_DIR$/template/blocks/writer_gallery.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="64" column="64" lean-forward="false" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/js/add_writer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="90">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/fill_tables.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="18">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
           <folding />
         </state>
       </provider>

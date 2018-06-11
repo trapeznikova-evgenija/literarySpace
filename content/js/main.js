@@ -14,6 +14,11 @@ $(function () {
         gutter: 10
     });
 
+    $('.photo-gallery-writer').masonry({
+        itemSelector: '.gallery-item',
+        gutter: 10
+    });
+
     $('.selectpicker').selectpicker();
 
     $('.gallery').lightGallery
@@ -26,18 +31,17 @@ $(function () {
     });
 
     $('.button-sign-out').on('click', function () {
-       location.href = 'logout.php';
+        location.href = 'logout.php';
     });
 
 
     $('.auth-form').on('submit', function () {
-       event.preventDefault();
+        event.preventDefault();
 
         var $that = $(this);
         $that.addClass('was-validated');
 
-        if(!this.checkValidity())
-        {
+        if (!this.checkValidity()) {
             return;
         }
 
@@ -46,7 +50,7 @@ $(function () {
 
         $.ajax({
             type: "POST",
-            url:'login.php',
+            url: 'login.php',
             data: data,
             cache: false,
             contentType: false,
@@ -57,13 +61,11 @@ $(function () {
 
                 wrongDataBlock.hide();
 
-                if (data)
-                {
+                if (data) {
                     location.href = 'add_writer.php';
                     $('.button-sign-in').hide();
-                } else
-                {
-                   showAndHide(wrongDataBlock);
+                } else {
+                    showAndHide(wrongDataBlock);
                 }
             },
             error: function () {
@@ -76,15 +78,14 @@ $(function () {
         });
     });
 
-    $('.back-link').on('click', function()
-    {
+    $('.back-link').on('click', function () {
         history.back();
     });
 });
 
 function showAndHide(wrongDataBlock) {
-    wrongDataBlock.show(1000, function(){
-        setTimeout(function(){
+    wrongDataBlock.show(1000, function () {
+        setTimeout(function () {
             wrongDataBlock.hide(500);
         }, 3000);
     });

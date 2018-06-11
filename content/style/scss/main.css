@@ -70,6 +70,9 @@ body {
 .grid-item {
   width: 32%; }
 
+.gallery-item {
+  width: 23%; }
+
 .century-country-row {
   font-family: PlayfairDisplay-Regular;
   padding-top: 15px;
