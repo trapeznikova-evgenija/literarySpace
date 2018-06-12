@@ -12,7 +12,6 @@ SELECT * FROM century;
 SELECT * FROM country;
 SELECT * FROM genre;
 
-
 SELECT * FROM writer;
 
 DELETE FROM century

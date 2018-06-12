@@ -26,14 +26,9 @@ $(function () {
         selector: 'a'
     });
 
-    $('.feedback-form').on('submit', function () {
-        console.log('Форма сабмитнулась');
-    });
-
     $('.button-sign-out').on('click', function () {
         location.href = 'logout.php';
     });
-
 
     $('.auth-form').on('submit', function () {
         event.preventDefault();
@@ -56,9 +51,6 @@ $(function () {
             contentType: false,
             processData: false,
             success: function (data) {
-                console.log('Привет,я отправилась успешно. Auth-form submit');
-                console.log(data);
-
                 wrongDataBlock.hide();
 
                 if (data) {

@@ -485,20 +485,6 @@ body
   }
 }
 
-.input-field-wrapper
-{
-  
-}
-
-.search-card
-{
-  //.search-card-image
-  //{
-  //  max-width: 300px;
-  //  max-height: 350px;
-  //}
-}
-
 .form-wrapper
 {
   .form-button-wrapper
@@ -528,13 +514,10 @@ body
 
 .slick-prev, .slick-next
 {
-
   &:before
   {
     color: $mainColor;
-    //content: none;
   }
-
 }
 
 .add_writer_form
@@ -574,11 +557,6 @@ body
     padding-right: 30px;
     padding-left: 30px;
   }
-}
-
-.auth-form
-{
-
 }
 
 .auth-input

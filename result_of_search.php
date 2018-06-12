@@ -1,6 +1,6 @@
 <?php
-require_once("include/common.inc.php");
-
+require_once('include/common.inc.php');
+checkOnEmptyParameter();
 $currentFilter = '';
 getFilter('authorCentury', 'century.id_century', $currentFilter);
 getFilter('authorCountry', 'country.id_country', $currentFilter);

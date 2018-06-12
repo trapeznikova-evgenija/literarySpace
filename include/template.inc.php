@@ -244,7 +244,6 @@ function renderInsertQuery($tableName, &$parameters, $countryId, $centuryId)
     }
     $values = implode(', ', array_values($parameters));
     $query = "{$begin} ( {$values} )"; //implode('', [$begin, '(', $values, ')']); //
-    echo 'QUERY ' . $query . PHP_EOL;
     return $query;
 }
 
@@ -329,16 +328,12 @@ function addNewWriterToDb($textDataArray, $imagesDataArray)
     $countryId = getCountryId($textDataArray);
     $centuryId = getCenturyId($textDataArray);
 
-    echo 'Перед insertDataInWriterTable' . PHP_EOL;
     $genresArray = getGenresArray($textDataArray);
     removeEmptyArrayElements($textDataArray);
     $query = renderInsertQuery('writer', $textDataArray, $countryId, $centuryId);
     insertDataInWriterTable($query);
 
-    echo 'genresArray ' . PHP_EOL;
-    print_r($genresArray);
     $writerId = getLastInsertId();
-    echo "LAST INSERT ID {$writerId}";
     if ($writerId) {
         addYearsOfLifeString($writerId);
         insertDataInGenreWriterTable($genresArray, $writerId);
@@ -364,5 +359,16 @@ function filterByGenre(&$currentFilter)
         } else {
             $currentFilter = "genre_writer.id_genre IN ({$stringGenresId})";
         }
+    }
+}
+
+function checkOnEmptyParameter()
+{
+    $countryArray = getRequestParameter('authorCentury');
+    $centuryArray = getRequestParameter('authorCountry');
+    $genresArray = getRequestParameter('authorGenre');
+
+    if (!$countryArray && !$centuryArray && !$genresArray) {
+        header('Location: index.php');
     }
 }
